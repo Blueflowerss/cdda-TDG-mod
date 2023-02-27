@@ -1,0 +1,20 @@
+[{"type": "effect_type",
+    "id": "camraconda_stare_effect",
+    "name": [
+        "Frozen"
+    ],
+	"desc":["You're completely frozen in space."],
+    "max_intensity": 1,
+    "apply_message": "You can't move.",
+    "int_dur_factor": 1,
+    "miss_messages": [["You can't move.", 1]],
+	"max_duration": "1 s",
+    "base_mods": {
+		"sleep_amount":[10],
+		"sleep_chance":[10000],
+		"speed_mod": [ -1000 ],
+		"dex_mod": [ -100 ],
+		"sleep_chance_bot":[10000]
+	}
+
+}]

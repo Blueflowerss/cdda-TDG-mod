@@ -1,0 +1,59 @@
+[  {
+    "id": "office_stapler",
+    "type": "harvest",
+    "message": "You pull the strider apart.",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.01 },
+      { "drop": "scrap", "type": "bone", "mass_ratio": 1 }
+    ]
+  },
+ {
+    "id": "office_computer",
+    "type": "harvest",
+    "message": "You pull the strider apart.",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.01 },
+      { "drop": "scrap", "type": "bone", "mass_ratio": 1},
+	  { "drop": "RAM","base_num": [ 0, 4 ], "max": 4 },
+	  { "drop": "processor","base_num": [ 0, 2 ], "max": 2 },
+	  { "drop": "e_scrap","base_num": [ 8, 16 ], "max": 16 },
+	  { "drop": "circuit","base_num": [ 2, 8 ], "max": 8 },
+	  { "drop": "power_supply","base_num": [ 0, 4 ], "max": 4 },
+	  { "drop": "amplifier","base_num": [ 0, 4 ], "max": 4 },
+	  { "drop": "plastic_chunk","base_num": [ 3, 10 ], "max": 10 },
+	  { "drop": "cable","base_num": [ 0, 8 ], "max": 8 }
+    ]
+  },
+  {
+    "id": "office_snake",
+    "type": "harvest",
+    "message": "You butcher the camraconda.",
+    "entries": [
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.01 },
+      { "drop": "scrap", "type": "bone", "mass_ratio": 1 },
+	  { "drop": "sheet_kevlar", "type": "skin", "mass_ratio": 0.04 },
+	  { "drop": "lens", "base_num": [ 0, 1 ], "type": "offal" }
+    ]
+  },
+   {
+    "result": "broken_office_shellaxy",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "time": "15 m",
+    "qualities": [ { "id": "SCREW", "level": 1},{"id":"BUTCHER","level":-50} ],
+    "components": [
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 4 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "cable", 6 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "plastic_chunk", 6 ] ],
+      [ [ "small_lcd_screen", 1 ] ]
+    ]
+  }
+  ]

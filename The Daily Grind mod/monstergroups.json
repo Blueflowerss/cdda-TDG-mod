@@ -1,0 +1,12 @@
+[
+  {
+    "name": "GROUP_OFFICES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 1, 4 ], "weight": 920 },
+	  { "monster": "mon_office_shellaxy", "pack_size": [ 1,1 ], "weight": 100 },
+      { "monster": "mon_office_anaconda", "weight": 10, "cost_multiplier": 1, "pack_size": [ 1, 1 ] },
+      { "group": "GROUP_ZOMBIE", "weight": 560, "cost_multiplier": 1, "pack_size": [ 1, 1 ] }
+    ]
+  }
+]
