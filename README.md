@@ -6,13 +6,9 @@ A rough roadmap
 -add various critures 
 
 	-add zombified versions of these creatures
-	
 	-camraconda DONE'ish
-	
 		-creature
-		
 		-spell which temporarily stops the player
-		
 	-stapler DONE 
 		-jumping little creatures
 		-found in offices
@@ -21,15 +17,19 @@ A rough roadmap
 		-ambush creature - spawns from a trap
 		-really short line of sight DONE
 
-  -other creatures from the novel
+ 	-other creatures from the novel
 -make a faction for the office creatures DONE
+
 -adding the officium mundi world layer to the normal world DONE
+
 	-inserting the layer into -9z
 	-making sure everything works nicely ;)
 	-adding a way to get there and back
 -make the hallways more structured
+
 	-make it resemble infinite cubicle halls
 -add reward orbs
+
 	-yellow orbs 
 		-can be used like sd cards to gain random recipes
 	-blue orb
