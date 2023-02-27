@@ -1,6 +1,6 @@
 # cdda-TDG-mod
 Attempt at integrating "The Daily Grind" novel with Cataclysm: Dark Days Ahead.
-
+Working off the backrooms mod by TGWeaver
 A rough roadmap
 
 -add various critures 
