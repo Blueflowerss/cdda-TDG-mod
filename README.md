@@ -2,7 +2,7 @@
 Attempt at integrating "The Daily Grind" novel with Cataclysm: Dark Days Ahead.
 
 A rough roadmap
--add various critures
+-add various critures \n
 	-add zombified versions of these creatures
 	-camraconda DONE'ish
 		-creature
