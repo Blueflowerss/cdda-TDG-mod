@@ -1,0 +1,70 @@
+[
+{
+    "type": "effect_on_condition",
+    "id": "EOC_OW_returnspot",
+    "//": "Picks a random house.",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_returnspot" },
+        "target_params": {
+          "om_terrain": "field",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 1200,
+          "min_distance": 200,
+          "z": 0,
+          "random": true
+        }
+      }
+    ]},
+{
+    "type": "effect_on_condition",
+    "id": "EOC_OW_teleportreturn",
+    "//": "Teleports you to a random field in the overworld.",
+    "effect": [
+      { "u_teleport": { "global_val": "OM_returnspot" }, "force": true }
+    ]
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "EOC_OW_warpdoor",
+    "condition": {
+      "u_query": "You open the door, behind it you see the outside world, step through?",
+      "default": false
+    },
+    "effect": [ { "run_eocs": [ "EOC_OW_returnspot", "EOC_OW_teleportreturn" ] } ]
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "EOC_OW_enterspot",
+    "//": "Picks a office chamber.",
+    "effect": [
+      {
+        "u_location_variable": { "global_val": "OM_enterspot" },
+        "target_params": {
+          "om_terrain": "backfloorchamber",
+          "om_terrain_match_type": "CONTAINS",
+          "search_range": 1200,
+          "min_distance": 200,
+          "z": -9,
+          "random": true
+        }
+      }
+    ]},
+{
+    "type": "effect_on_condition",
+    "id": "EOC_OW_teleportenter",
+    "//": "Teleports you to a random chamber in the offices.",
+    "effect": [
+      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true }
+    ]
+  },
+ {
+    "type": "effect_on_condition",
+    "id": "EOC_OFFICE_warpdoor",
+    "condition": {
+      "u_query": "You open the door, the room beyond feels strange, step through?",
+      "default": false
+    },
+    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter" ] } ]
+  }
+]

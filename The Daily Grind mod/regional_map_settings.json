@@ -718,7 +718,8 @@
           "mx_science": 10,
           "mx_military": 4,
           "mx_exocrash_1": 5,
-          "mx_exocrash_2": 5
+          "mx_exocrash_2": 5,
+		  "mx_strange_door":5
         }
       },
       "road": {
