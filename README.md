@@ -19,10 +19,11 @@ Working off the backrooms mod by TGWeaver
 		-examine it to enter the offices
 	-exit
 		-sometimes in the offices you can find a metal door, which you can use to exit the dimension
-	-some changes to the backrooms map generation
+	-some changes to the backrooms
 		-making it more walkable
 		-adding more furniture
 		-making the rooms' placement less random
+		-add respawning mechanics, you'll never feel alone
 A rough roadmap
 
 	-add various critures 
