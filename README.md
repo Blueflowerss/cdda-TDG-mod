@@ -6,10 +6,14 @@ Working off the backrooms mod by TGWeaver
 -features as of now
 
 	-most of the stuff from the backrooms mod
-	-3 creatures
+	-4 creatures
 		-camraconda- rare, has a deadly sleeping attack and can kill easily
 		-strider - a living stapler, a small jumping spider-like creature which uses hit-n-run tactics against the enemy, usually in packs
 		-shellaxy - An ambush computer with a deadly bite, roams the halls for now, in the future it will ambush the player in the cubicles
+		-tumblefeed - A slithering mass of cables with grappling attacks.
+	-orbs
+		-yellow orbs give skills
+		-small yellow orbs can be used as SD cards in smartphones to gain recipes
 	-a strange door
 		-you can find it while wandering the fields, it's extremely rare though
 		-examine it to enter the offices
@@ -22,8 +26,6 @@ Working off the backrooms mod by TGWeaver
 A rough roadmap
 
 	-add various critures 
-
-		-add zombified versions of these creatures
 		-camraconda DONE'ish
 			-creature
 			-spell which temporarily stops the player
@@ -48,9 +50,22 @@ A rough roadmap
 		-make it resemble infinite cubicle halls
 	-add reward orbs
 
-		-yellow orbs 
+		-yellow orbs DONE
 			-can be used like sd cards to gain random recipes
 		-blue orb
 			-gives an random effect from a list of useful effects, like
 				-default- get a weapon or piece of armor
 				-wounded- get bandages and antiseptic
+		-purple orb 
+			-give useful permament body mutations/traits
+			-skin hardness
+			-carry weight increase
+			-fire resistance/cold resistance 
+	-add magic items
+		-magic coffee maker 
+			-makes coffee that boosts your DEX and speed
+	-use yellow orbs as batteries
+		-make special universal batteries craftable from yellow orbs
+		-can only power converted equipment
+	-some notes from me or others
+		-have two paths players can slide down. scavenge outside in the wreckage of society or stick with the anomaly within for the gains despite 			the immediate danger
