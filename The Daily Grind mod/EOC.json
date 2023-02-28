@@ -5,7 +5,7 @@
     "//": "Picks a random house.",
     "effect": [
       {
-        "u_location_variable": { "u_val": "OM_returnspot" },
+        "u_location_variable": { "global_val": "OM_returnspot" },
         "target_params": {
           "om_terrain": "field",
           "om_terrain_match_type": "CONTAINS",
@@ -20,9 +20,8 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportreturn",
     "//": "Teleports you to a random field in the overworld.",
-	"condition":{ "u_has_var": "OM_returnspot"	},
     "effect": [
-      { "u_teleport": { "u_val": "OM_returnspot" }, "force": true },
+      { "u_teleport": { "global_val": "OM_returnspot" }, "force": true },
 	  {"u_message": "You step through the door."}
     ],
 	"false_effect": [
@@ -45,7 +44,7 @@
     "//": "Picks a office chamber.",
     "effect": [
       {
-        "u_location_variable": { "u_val": "OM_enterspot" },
+        "u_location_variable": { "global_val": "OM_enterspot" },
         "target_params": {
           "om_terrain": "backfloorchamber",
           "om_terrain_match_type": "CONTAINS",
@@ -61,8 +60,8 @@
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
     "effect": [
-	{"u_location_variable": { "u_val": "OM_returnspot" }},
-      { "u_teleport": { "u_val": "OM_enterspot" }, "force": true },
+	{"u_location_variable": { "global_val": "OM_returnspot" }},
+      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
 	{"u_message": "You step through the door, looking back you find the door missing."}
     ]
   },
@@ -109,6 +108,37 @@
 		  [ "EOC_yellow_orb_chemistry", { "const": 45 } ]
 	  ]}
   },
+  {
+    "type": "effect_on_condition",
+    "id": "office_spawn_enemies",
+    "recurrence": [ "10 minutes", "2 hours" ],
+    "global": true,
+    "condition": {"u_at_om_location": "backfloorchamber" },
+    "effect": [ 
+		{ "mapgen_update": [ "office_spawner"] },
+		{ "mapgen_update": "office_spawner", "offset_x": 1 },
+		{ "mapgen_update": "office_spawner",  "offset_x": -1 },
+		{ "mapgen_update": "office_spawner", "offset_y": 1 },
+		{ "mapgen_update": "office_spawner", "offset_y": -1 }
+	   ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "office_spawner",
+    "//": "spawns a buncha monsters",
+    "object": {
+      "place_monsters": [
+	  {"monster":"GROUP_OFFICES",
+	  "x":[0,23],"y":[0,23]}
+        
+	]
+    }
+  },
+
+
+
+
 
 	{"type": "effect_on_condition",
     "id": "EOC_yellow_orb_social",

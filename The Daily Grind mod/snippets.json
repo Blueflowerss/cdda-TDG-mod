@@ -274,5 +274,30 @@
         }
       }
     ]
-  }
-]
+  },
+   {
+    "type": "snippet",
+    "category": "<office_stapler_harvest>",
+    "text": [
+      "It's small body makes harvesting it delicate work, and as you peel off the strange chitinous shell housing its innards, you're met with a surprisingly organic mess of darkened flesh. A dubious belt-like organ just behind its jaws seems to house dozens of staple pins that you're glad are inside it and not you."
+    ]
+  },
+   {
+    "type": "snippet",
+    "category": "<office_shellaxy_harvest>",
+    "text": [
+      "Cracking into its bulky shell takes more effort than you'd like for a careful harvesting, but once you do, you're greeted with surprisingly cubical organs, neatly placed in organized rows and groups. It was almost as though the creature's mimicry of a computer was an intentional design than something which evolved naturally. A part of you wonders how well the organs of one of these creatures would match up to modern components."
+	  ]
+  },
+	{
+	"type": "snippet",
+	"category": "<office_tumblefeed_harvest>",
+	"text": [
+	  "Getting work on butchering this creature feels more like cutting through a giant rubbery mop. The outer cables are incredibly tough, and give way to an even more tangled mess of wires the deeper you go. Though it's mostly the same all the way to the center, the cables do get noticeably thinner and weaker as you reach its core, with its deepest sections being just bare copper strands. "]
+},
+{
+	"type": "snippet",
+	"category": "<office_camraconda_harvest>",
+	"text": [
+"The eerie nature of this creature leaves you somewhat nervous to imagine what it would look like within, but you slice into it anyways. Its thick rubbery skin takes a good amount of work to cut through, spraying out minute sparks once you breach into the innards of the creature. Within, it is almost entirely composed of long fibrous material that isn't quite flesh or rubber, and its organs are incredibly stretched out to accommodate its snake-like form. As you reach the head, it seems to become much more mechanical, with the long fibers having housed copper wires that link up to the internal camera which formed its cyclopean skull."]
+}]

@@ -9,7 +9,7 @@
 	"default_faction":"office_monsters",
 	"speed": 80,
 	  "material": [
-		"kevlar_rigid",
+		"rubber",
 		"plastic"
 	  ],
 	"symbol":"S",
@@ -88,8 +88,8 @@
     "SPIDER"
   ],
   "diff": 2,
-  "volume": "150 ml",
-  "weight": "300 g",
+  "volume": "350 ml",
+  "weight": "600 g",
   "hp": 15,
   "speed": 90,
   "material": [
