@@ -708,6 +708,7 @@
           "mx_mass_grave": 50,
           "mx_grave": 50,
           "mx_supplydrop": 40,
+		  "mx_strange_door":40,
           "mx_Trapdoor_spider_den": 40,
           "mx_collegekids": 30,
           "mx_drugdeal": 30,
@@ -718,8 +719,8 @@
           "mx_science": 10,
           "mx_military": 4,
           "mx_exocrash_1": 5,
-          "mx_exocrash_2": 5,
-		  "mx_strange_door":5
+          "mx_exocrash_2": 5
+		  
         }
       },
       "road": {
@@ -744,20 +745,27 @@
           "mx_prison_van": 10,
           "mx_exocrash_1": 5,
           "mx_exocrash_2": 5
-        }
-      },
-		"backfloorchamber": {
-        "chance": 75,
+	  }},
+	"backfloorchamber": {
+        "chance": 40,
         "extras": {
-          "mx_helicopter": 10,
-          "mx_military": 50,
-          "mx_science": 400,
-          "mx_collegekids": 500,
-          "mx_crater": 100,
-          "mx_portal_in": 40,
-          "mx_mayhem": 500,
-          "mx_casings": 1000,
-          "mx_corpses": 300
+          "mx_casings": 50,
+          "mx_corpses": 50,
+          "mx_collegekids": 25,
+          "mx_spider": 20,
+          "mx_nest_dermatik": 20,
+          "mx_science": 20,
+          "mx_crater": 10,
+          "mx_nest_wasp": 10,
+          "mx_house_wasp": 10,
+          "mx_pond": 10,
+          "mx_military": 10,
+          "mx_drugdeal": 10,
+          "mx_supplydrop": 10,
+          "mx_portal": 3,
+          "mx_portal_in": 3,
+          "mx_jabberwock": 1,
+          "mx_helicopter": 1
         }
       },
       "bridgehead_ground": { "chance": 5, "extras": { "mx_minefield": 100 } },

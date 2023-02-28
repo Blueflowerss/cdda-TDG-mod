@@ -100,6 +100,14 @@
   "aggression": 8,
   "morale": 2,
   "aggro_character": true,
+  "death_drops": {
+    "items": [
+      [
+        "office_yellow_orb_small",
+		1
+      ]
+    ]
+  },
   "melee_skill": 1,
   "melee_dice": 1,
   "melee_dice_sides": 0,
@@ -122,6 +130,7 @@
   ],
   "vision_day": 20,
   "vision_night": 5,
+  "zombify_into":"",
   "harvest": "office_stapler",
   "special_attacks": [
     {
@@ -141,6 +150,7 @@
     "SEES",
     "HIT_AND_RUN",
     "CLIMBS",
+	"GROUP_MORALE",
     "PATH_AVOID_DANGER_1"
   ],
   "copy-from": "mon_spider_jumping_giant"
@@ -151,7 +161,7 @@
   "name": {
     "str": "shellaxy"
   },
-  "description": "On first glance, it resembles a regular computer case, albeit outdated. On closer inspection you notice a maw line going around the case.",
+  "description": "if not for the spindly legs coming out it's sides and a jaw crack across it's casing, you'd mistake it for a regular desktop computer.",
   "default_faction": "office_monsters",
   "species": [
     "ROBOT"
@@ -164,34 +174,147 @@
   "material": [
     "steel"
   ],
+   "death_drops": {
+    "items": [
+      [
+        "office_yellow_orb",
+		1
+      ]
+    ]
+  },
   "symbol": "C",
   "color": "white",
   "morale": 5,
   "aggression": 8,
-  "melee_skill": 2,
+  "melee_skill": 4,
+  "harvest":"office_computer",
   "melee_dice": 4,
   "melee_dice_sides": 4,
   "melee_damage": [
     {
       "damage_type": "cut",
-      "amount": 4
+      "amount": 6
     }
+  ],
+  "special_attacks": [
+    {
+      "type": "bite",
+      "cooldown": 10,
+      "accuracy": 6,
+      "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 8,
+          "armor_multiplier": 0.3
+        },
+        {
+          "damage_type": "bash",
+          "amount": 16,
+          "armor_multiplier": 0.3
+        }
+      ]
+    },
+    [
+      "GRAB",
+      20
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
   ],
   "armor_bash": 2,
   "armor_cut": 12,
   "armor_bullet": 10,
-	"death_function": {
-    "corpse_type": "BROKEN"
-  },
   "anger_triggers": [
     "PLAYER_CLOSE"
   ],
   "flags": [
     "BASHES",
     "COLDPROOF",
+	"HEARS",
     "NO_BREATHE",
     "PRIORITIZE_TARGETS",
     "PATH_AVOID_DANGER_1",
     "STUN_IMMUNE"
+  ]
+},
+{
+  "id": "mon_office_tumblefeed",
+  "type": "MONSTER",
+  "name": {
+    "str": "tumblefeed"
+  },
+  "description": "A large mass of slithering cables, it drags itself with extranenous cables. You feel as if getting close to it is a bad idea.",
+  "default_faction": "",
+  "bodytype": "blob",
+  "species": [
+    "SLIME"
+  ],
+  "diff": 30,
+  "volume": "192500 ml",
+  "weight": "320 kg",
+  "hp": 360,
+  "speed": 90,
+  "material": [
+    "plastic"
+  ],
+  "symbol": "O",
+  "color": "light_gray",
+  "phase": "SOLID",
+  "aggression": 100,
+  "vision_day": 20,
+  "vision_night": 5,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 6,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 15
+    }
+  ],
+  "special_attacks": [
+    {
+      "id": "stretch_attack"
+    },
+    {
+      "id": "longswipe"
+    },
+    {
+      "id": "scratch",
+      "damage_max_instance": [
+        {
+          "damage_type": "cut",
+          "amount": 14,
+          "armor_multiplier": 0.8
+        }
+      ]
+    },
+	[
+      "RANGED_PULL",
+      20
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ]
+  ],
+  "armor_bash": 14,
+  "armor_cut": 4,
+  "armor_bullet": 3,
+  "armor_stab": 2,
+  "armor_elec": 4,
+  "bleed_rate": 30,
+  "harvest": "office_wireball",
+  "flags": [
+	"SEES",
+	"BASHES",
+    "HEARS",
+	"CLIMBS",
+    "GOODHEARING",
+    "NOHEAD",
+    "NO_BREATHE"
   ]
 }]

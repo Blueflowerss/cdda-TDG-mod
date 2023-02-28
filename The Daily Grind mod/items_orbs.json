@@ -1,0 +1,47 @@
+[
+	
+	{
+    "type": "COMESTIBLE",
+  "id": "office_yellow_orb",
+  "looks_like": "baseball",
+
+    "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_yellow_orb" ],
+  "symbol": "o",
+  "color": "yellow",
+  "name": {
+    "str": "yellow orb"
+  },
+  "description": "A small neon-glowing yellow orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_1"
+  ],
+  "weight": "50 g",
+  "volume": "15 ml"
+},
+	{"type":"GENERIC",
+	"id":"office_yellow_orb_small",
+	"looks_like":"baseball",
+  "name": {
+    "str": "small yellow orb"
+  },
+	 "symbol": "o",
+	"description": "A small neon-glowing yellow orb, for an inexplicable reason you feel like inserting it into a nearby SD-card reader..",
+	"price": 1000,
+	"price_postapoc": 100,
+	"material": [
+		"glass"
+	 ],
+	  "weight": "5 g",
+	  "volume": "1 ml",
+	"flags":[
+		"MC_MOBILE",
+		"MC_TURN_USED",
+		"MC_RANDOM_STUFF"]
+	}
+]

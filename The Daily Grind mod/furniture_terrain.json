@@ -2,46 +2,23 @@
   {
     "type": "terrain",
     "id": "t_backroom_wall",
-    "name": "faded wall",
-    "description": "A yellowed, numbingly monotonous wallpaper decorates these thin walls.  They smell of mildew and have a faintly damp feel.",
+    "name": "yellow wall",
+    "description": "A yellowed, numbingly monotonous wallpaper decorates these walls.  They smell of mildew and have a faintly damp feel.",
     "symbol": "#",
-    "color": "yellow",
-    "looks_like": "t_wall_y",
-    "move_cost": 0,
-    "coverage": 100,
-    "roof": "t_flat_roof",
-    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
-    "bash": {
-      "str_min": 15,
-      "str_max": 45,
-      "sound": "crash!",
-      "sound_fail": "whump!",
-      "sound_vol": 8,
-      "sound_fail_vol": 4,
-      "ter_set": "t_carpet_backrooms"
-    }
+	"color":"yellow",
+	"copy-from":"t_wall_y",
+	"delete":{"flags":[ "FLAMMABLE" ]}
   },
   {
     "type": "terrain",
     "id": "t_backroom_wall_gray",
-    "name": "faded gray wall",
+    "name": "gray wall",
     "description": "A drab gray drywall barrier with no finishing.  Feels almost damp to the touch and smells faintly of cleaner chemicals.",
     "symbol": "#",
-    "color": "light_gray",
-    "looks_like": "t_concrete_wall",
-    "move_cost": 0,
-    "coverage": 100,
-    "roof": "t_flat_roof",
-    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
-    "bash": {
-      "str_min": 15,
-      "str_max": 45,
-      "sound": "crash!",
-      "sound_fail": "whump!",
-      "sound_vol": 8,
-      "sound_fail_vol": 4,
-      "ter_set": "t_carpet_backrooms"
-    }
+	"looks_like":"t_concrete_wall",
+	"color":"light_gray",
+	"copy-from":"t_wall_y",
+	"delete":{"flags":[ "FLAMMABLE" ]}
   },
   {
     "type": "terrain",

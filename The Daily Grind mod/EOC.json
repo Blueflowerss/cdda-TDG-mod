@@ -5,12 +5,12 @@
     "//": "Picks a random house.",
     "effect": [
       {
-        "u_location_variable": { "global_val": "OM_returnspot" },
+        "u_location_variable": { "u_val": "OM_returnspot" },
         "target_params": {
           "om_terrain": "field",
           "om_terrain_match_type": "CONTAINS",
-          "search_range": 1200,
-          "min_distance": 200,
+          "search_range": 200,
+          "min_distance": 0,
           "z": 0,
           "random": true
         }
@@ -20,9 +20,15 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportreturn",
     "//": "Teleports you to a random field in the overworld.",
+	"condition":{ "u_has_var": "OM_returnspot"	},
     "effect": [
-      { "u_teleport": { "global_val": "OM_returnspot" }, "force": true }
-    ]
+      { "u_teleport": { "u_val": "OM_returnspot" }, "force": true },
+	  {"u_message": "You step through the door."}
+    ],
+	"false_effect": [
+	{"run_eocs":["EOC_OW_returnspot","EOC_OW_teleportreturn"]},
+	{"u_message": "You step through the door, looking back you find the door missing."}
+	]
   },
  {
     "type": "effect_on_condition",
@@ -31,7 +37,7 @@
       "u_query": "You open the door, behind it you see the outside world, step through?",
       "default": false
     },
-    "effect": [ { "run_eocs": [ "EOC_OW_returnspot", "EOC_OW_teleportreturn" ] } ]
+    "effect": [ { "run_eocs": ["EOC_OW_teleportreturn" ] } ]
   },
  {
     "type": "effect_on_condition",
@@ -39,12 +45,12 @@
     "//": "Picks a office chamber.",
     "effect": [
       {
-        "u_location_variable": { "global_val": "OM_enterspot" },
+        "u_location_variable": { "u_val": "OM_enterspot" },
         "target_params": {
           "om_terrain": "backfloorchamber",
           "om_terrain_match_type": "CONTAINS",
-          "search_range": 1200,
-          "min_distance": 200,
+          "search_range": 200,
+          "min_distance": 0,
           "z": -9,
           "random": true
         }
@@ -55,7 +61,9 @@
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
     "effect": [
-      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true }
+	{"u_location_variable": { "u_val": "OM_returnspot" }},
+      { "u_teleport": { "u_val": "OM_enterspot" }, "force": true },
+	{"u_message": "You step through the door, looking back you find the door missing."}
     ]
   },
  {
@@ -66,5 +74,201 @@
       "default": false
     },
     "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter" ] } ]
-  }
+  },
+  {
+	  "type": "effect_on_condition",
+	  "id": "EOC_yellow_orb",
+	  "effect":{
+        "weighted_list_eocs": [
+          [ "EOC_yellow_orb_social", { "const": 45 } ],
+          [ "EOC_yellow_orb_computer", { "const": 45 } ],
+		  [ "EOC_yellow_orb_firstaid", { "const": 45 } ],
+		  [ "EOC_yellow_orb_mechanics", { "const": 45 } ],
+		  [ "EOC_yellow_orb_traps", { "const": 45 } ],
+		  [ "EOC_yellow_orb_driving", { "const": 45 } ],
+		  [ "EOC_yellow_orb_swimming", { "const": 45 } ],
+		  [ "EOC_yellow_orb_fabrication", { "const": 45 } ],
+		  [ "EOC_yellow_orb_cooking", { "const": 45 } ],
+		  [ "EOC_yellow_orb_tailor", { "const": 45 } ],
+		  [ "EOC_yellow_orb_survival", { "const": 45 } ],
+		  [ "EOC_yellow_orb_electronics", { "const": 45 } ],
+		  [ "EOC_yellow_orb_archery", { "const": 45 } ],
+		  [ "EOC_yellow_orb_gun", { "const": 45 } ],
+		  [ "EOC_yellow_orb_launcher", { "const": 45 } ],
+		  [ "EOC_yellow_orb_pistol", { "const": 45 } ],
+		  [ "EOC_yellow_orb_rifle", { "const": 45 } ],
+		  [ "EOC_yellow_orb_shotgun", { "const": 45 } ],
+		  [ "EOC_yellow_orb_smg", { "const": 45 } ],
+		  [ "EOC_yellow_orb_throw", { "const": 45 } ],
+		  [ "EOC_yellow_orb_melee", { "const": 45 } ],
+		  [ "EOC_yellow_orb_bashing", { "const": 45 } ],
+		  [ "EOC_yellow_orb_cutting", { "const": 45 } ],
+		  [ "EOC_yellow_orb_dodge", { "const": 45 } ],
+		  [ "EOC_yellow_orb_stabbing", { "const": 45 } ],
+		  [ "EOC_yellow_orb_unarmed", { "const": 45 } ],
+		  [ "EOC_yellow_orb_chemistry", { "const": 45 } ]
+	  ]}
+  },
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_social",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"speech"},"=",{"u_val":"skill_level","skill":"speech"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable manipulating people."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_computer",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"computer"},"=",{"u_val":"skill_level","skill":"computer"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable in the field of IT."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_firstaid",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"firstaid"},"=",{"u_val":"skill_level","skill":"firstaid"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable in general medicinal procedures."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_mechanics",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"mechanics"},"=",{"u_val":"skill_level","skill":"mechanics"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable with car mechanics."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_traps",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"traps"},"=",{"u_val":"skill_level","skill":"traps"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable about settings up traps and disarming them."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_driving",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"driving"},"=",{"u_val":"skill_level","skill":"driving"},"+",{"const":1}]},
+	{"u_message": "You feel a better grip on driving various vehicles."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_swimming",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"swimming"},"=",{"u_val":"skill_level","skill":"swimming"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable about swimming."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_fabrication",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"fabrication"},"=",{"u_val":"skill_level","skill":"fabrication"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable about various construction projects."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_cooking",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"cooking"},"=",{"u_val":"skill_level","skill":"cooking"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable about cooking."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_tailor",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"tailor"},"=",{"u_val":"skill_level","skill":"tailor"},"+",{"const":1}]},
+	{"u_message": "You feel more acquainted with tailoring projects."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_survival",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"survival"},"=",{"u_val":"skill_level","skill":"survival"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable about general survival practices."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_electronics",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"electronics"},"=",{"u_val":"skill_level","skill":"electronics"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable in the topic of electronics."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_archery",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"archery"},"=",{"u_val":"skill_level","skill":"archery"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with bows."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_gun",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"gun"},"=",{"u_val":"skill_level","skill":"gun"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable handling firearms."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_launcher",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"launcher"},"=",{"u_val":"skill_level","skill":"launcher"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable handling launchers ."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_pistol",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"pistol"},"=",{"u_val":"skill_level","skill":"pistol"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable handling handguns."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_rifle",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"rifle"},"=",{"u_val":"skill_level","skill":"rifle"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable handling rifles."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_shotgun",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"shotgun"},"=",{"u_val":"skill_level","skill":"shotgun"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with shotguns."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_smg",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"smg"},"=",{"u_val":"skill_level","skill":"smg"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with submachine guns."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_throw",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"throw"},"=",{"u_val":"skill_level","skill":"throw"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable throwing."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_melee",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"melee"},"=",{"u_val":"skill_level","skill":"melee"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with melee weapons."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_bashing",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"bashing"},"=",{"u_val":"skill_level","skill":"bashing"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with bashing weapons."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_cutting",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"cutting"},"=",{"u_val":"skill_level","skill":"cutting"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with cutting weapons."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_dodge",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"dodge"},"=",{"u_val":"skill_level","skill":"dodge"},"+",{"const":1}]},
+	{"u_message": "Your body feels more agile."}]},
+
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_stabbing",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"stabbing"},"=",{"u_val":"skill_level","skill":"stabbing"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with stabbing weapons."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_unarmed",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"unarmed"},"=",{"u_val":"skill_level","skill":"unarmed"},"+",{"const":1}]},
+	{"u_message": "You feel more comfortable with using your body as a weapon."}]},
+	
+	{"type": "effect_on_condition",
+    "id": "EOC_yellow_orb_chemistry",
+    "effect": [
+	{"arithmetic": [{"u_val":"skill_level","skill":"chemistry"},"=",{"u_val":"skill_level","skill":"chemistry"},"+",{"const":1}]},
+	{"u_message": "You feel more knowledgeable in the topic of chemistry."}]}
 ]

@@ -2,8 +2,8 @@
   {
     "id": "mx_strange_door",
     "type": "map_extra",
-    "name": "Strange Door",
-    "description": "There's a strange door here.",
+    "name": "A door",
+    "description": "There's a door here.",
     "generator": { "generator_method": "update_mapgen", "generator_id": "mx_strange_door" },
     "sym": "X",
     "color": "red",
