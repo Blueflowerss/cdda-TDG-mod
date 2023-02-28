@@ -72,7 +72,7 @@
       "u_query": "You open the door, the room beyond feels strange, step through?",
       "default": false
     },
-    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter" ] } ]
+    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter","office_spawn_enemies" ] } ]
   },
   {
 	  "type": "effect_on_condition",
@@ -111,15 +111,14 @@
   {
     "type": "effect_on_condition",
     "id": "office_spawn_enemies",
-    "recurrence": [ "10 minutes", "2 hours" ],
+    "recurrence": [ "10 minutes", "20 minutes" ],
     "global": true,
-    "condition": {"u_at_om_location": "backfloorchamber" },
+    "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{ "compare_int": [ { "u_val": "monsters_nearby", "radius": 60 }, "<", { "const": 20 } ] }]},
     "effect": [ 
-		{ "mapgen_update": [ "office_spawner"] },
-		{ "mapgen_update": "office_spawner", "offset_x": 1 },
-		{ "mapgen_update": "office_spawner",  "offset_x": -1 },
-		{ "mapgen_update": "office_spawner", "offset_y": 1 },
-		{ "mapgen_update": "office_spawner", "offset_y": -1 }
+		{ "mapgen_update": "office_spawner", "offset_x": 2 },
+		{ "mapgen_update": "office_spawner",  "offset_x": -2 },
+		{ "mapgen_update": "office_spawner", "offset_y": 2 },
+		{ "mapgen_update": "office_spawner", "offset_y": -2 }
 	   ]
   },
   {
@@ -130,7 +129,7 @@
     "object": {
       "place_monsters": [
 	  {"monster":"GROUP_OFFICES",
-	  "x":[0,23],"y":[0,23]}
+	  "x":[0,23],"y":[0,23],"density": 0.01 }
         
 	]
     }
