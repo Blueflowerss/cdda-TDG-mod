@@ -12,8 +12,8 @@ Working off the backrooms mod by TGWeaver
 		-shellaxy - An ambush computer with a deadly bite, roams the halls for now, in the future it will ambush the player in the cubicles
 		-tumblefeed - A slithering mass of cables with grappling attacks.
 	-orbs
-		-yellow orbs give skills
-		-small yellow orbs can be used as SD cards in smartphones to gain recipes
+		-yellow orbs give skills and some progress in 3 proficiencies
+		-small yellow orbs give some progress in a single proficiency
 	-a strange door
 		-you can find it while wandering the fields, it's extremely rare though
 		-examine it to enter the offices
