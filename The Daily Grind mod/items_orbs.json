@@ -24,12 +24,14 @@
   "weight": "500 g",
   "volume": "150 ml"
 },
-	{"type":"GENERIC",
-	"id":"office_yellow_orb_small",
+	{ "type": "COMESTIBLE",
+  "id": "office_yellow_orb_small",
 	"looks_like":"baseball",
   "name": {
     "str": "small yellow orb"
   },
+      "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_yellow_orb_small" ],
 	 "symbol": "o",
 	"description": "A small neon-glowing yellow orb, for an inexplicable reason you feel like inserting it into a nearby SD-card reader..",
 	"price": 1000,
@@ -40,9 +42,7 @@
 	  "weight": "50 g",
 	  "volume": "10 ml",
 	"flags":[
-		"MC_MOBILE",
-		"MC_TURN_USED",
-		"MC_RANDOM_STUFF"]
+		"LIGHT_1"]
 	},
 {
     "type": "COMESTIBLE",
