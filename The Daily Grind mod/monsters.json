@@ -32,6 +32,14 @@
       "amount": 8
     }
   ],
+    "death_drops": {
+    "items": [
+      [
+        "office_yellow_orb",
+		3
+      ]
+    ]
+  },
   "special_attacks": [
 	{
 		"type": "spell",
@@ -62,12 +70,13 @@
       ]
     }
   ],
-	"armor_bash": 3,
-	"armor_cut": 12,
+	"armor_bash": 10,
+	"armor_cut": 16,
 	"armor_bullet": 8,
 	"armor_elec": 0,
 	"vision_day": 35,
 	"vision_night": 10,
+	"upgrades":false,
 	"anger_triggers": [
 		"HURT",
 		"PLAYER_CLOSE"],
@@ -111,6 +120,8 @@
   "melee_skill": 1,
   "melee_dice": 1,
   "melee_dice_sides": 0,
+  "attack_effs":[],
+  "upgrades":false,
   "melee_damage": [
     {
       "damage_type": "cut",
@@ -149,6 +160,7 @@
   "flags": [
     "SEES",
     "HIT_AND_RUN",
+	"GOODHEARING",
     "CLIMBS",
 	"GROUP_MORALE",
     "PATH_AVOID_DANGER_1"
@@ -169,8 +181,8 @@
   "volume": "10 L",
   "weight": "9 kg",
   "bleed_rate":300,
-  "hp": 60,
-  "speed": 30,
+  "hp": 160,
+  "speed": 80,
   "material": [
     "steel"
   ],
@@ -187,9 +199,10 @@
   "morale": 5,
   "aggression": 8,
   "melee_skill": 4,
+  "upgrades":false,
   "harvest":"office_computer",
-  "melee_dice": 4,
-  "melee_dice_sides": 4,
+  "melee_dice": 2,
+  "melee_dice_sides": 2,
   "melee_damage": [
     {
       "damage_type": "cut",
@@ -199,17 +212,17 @@
   "special_attacks": [
     {
       "type": "bite",
-      "cooldown": 10,
+      "cooldown": 30,
       "accuracy": 6,
       "damage_max_instance": [
         {
           "damage_type": "stab",
-          "amount": 8,
+          "amount": 14,
           "armor_multiplier": 0.3
         },
         {
           "damage_type": "bash",
-          "amount": 16,
+          "amount": 6,
           "armor_multiplier": 0.3
         }
       ]
@@ -232,9 +245,9 @@
   "flags": [
     "BASHES",
     "COLDPROOF",
-	"HEARS",
+	"SEES",
+	"GOODHEARING",
     "NO_BREATHE",
-    "PRIORITIZE_TARGETS",
     "PATH_AVOID_DANGER_1",
     "STUN_IMMUNE"
   ]
@@ -254,7 +267,7 @@
   "diff": 30,
   "volume": "192500 ml",
   "weight": "320 kg",
-  "hp": 360,
+  "hp": 560,
   "speed": 90,
   "material": [
     "plastic"
@@ -266,8 +279,9 @@
   "vision_day": 20,
   "vision_night": 5,
   "morale": 100,
+  "upgrades":false,
   "melee_skill": 6,
-  "melee_dice": 2,
+  "melee_dice": 6,
   "melee_dice_sides": 6,
   "melee_damage": [
     {
@@ -294,11 +308,11 @@
     },
 	[
       "RANGED_PULL",
-      20
+      5
     ],
     [
       "GRAB_DRAG",
-      10
+      3
     ]
   ],
   "armor_bash": 14,
@@ -316,5 +330,13 @@
     "GOODHEARING",
     "NOHEAD",
     "NO_BREATHE"
-  ]
+  ],
+   "death_drops": {
+    "items": [
+      [
+        "office_blue_orb",
+		5
+      ]
+    ]
+  }
 }]

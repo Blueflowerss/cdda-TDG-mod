@@ -46,7 +46,7 @@
     "type": "harvest",
     "message": "<office_tumblefeed_harvest>",
     "entries": [
-	{ "drop": "cable", "type": "bone", "mass_ratio": 0.03 },
+	{ "drop": "cable", "type": "bone", "mass_ratio": 0.3 },
 	{ "drop": "scrap", "type": "bone", "mass_ratio": 0.1 }
     ]
   }

@@ -65,15 +65,6 @@
 	{"u_message": "You step through the door, looking back you find the door missing."}
     ]
   },
- {
-    "type": "effect_on_condition",
-    "id": "EOC_OFFICE_warpdoor",
-    "condition": {
-      "u_query": "You open the door, the room beyond feels strange, step through?",
-      "default": false
-    },
-    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter","office_spawn_enemies" ] } ]
-  },
   {
 	  "type": "effect_on_condition",
 	  "id": "EOC_yellow_orb",
@@ -111,9 +102,10 @@
   {
     "type": "effect_on_condition",
     "id": "office_spawn_enemies",
-    "recurrence": [ "10 minutes", "20 minutes" ],
+    "recurrence": [ "1 minutes", "3 minutes" ],
     "global": true,
     "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{ "compare_int": [ { "u_val": "monsters_nearby", "radius": 60 }, "<", { "const": 20 } ] }]},
+	"deactivate_condition":{"not":{"u_at_om_location": "backfloorchamber"}},
     "effect": [ 
 		{ "mapgen_update": "office_spawner", "offset_x": 2 },
 		{ "mapgen_update": "office_spawner",  "offset_x": -2 },
@@ -134,10 +126,44 @@
 	]
     }
   },
+{
+    "type": "effect_on_condition",
+    "id": "EOC_OFFICE_warpdoor",
+    "condition": {
+      "u_query": "You open the door, the room beyond feels strange, step through?",
+      "default": false
+    },
+    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter","office_spawn_enemies" ] } ]
+  },
+  {
+	  "type": "effect_on_condition",
+	  "id": "EOC_blue_orb",
+	  "effect":{
+        "weighted_list_eocs": [
+          [ "EOC_blue_orb_heal", {"const":45} ],
+		  [ "EOC_blue_orb_recover_stamina", {"const":45 }]
+		  ]
+	  }
+  },
 
+{"type": "effect_on_condition",
+    "id": "EOC_blue_orb_heal",
+    "effect": [
+	{"u_message": "You no longer feel any previous pain and you feel your wounds closing up."},
+	{ "u_lose_effect": "bleed" },
+	{ "arithmetic": [ { "u_val": "pain" }, "=", { "const": 0 } ] }
+]},
+	
 
-
-
+{"type": "effect_on_condition",
+    "id": "EOC_blue_orb_recover_stamina",
+    "effect": [
+	{"u_message": "Any exhaustion you had is gone."},
+	{ "u_lose_effect": "sleep_deprivation" },
+	{ "arithmetic": [ { "u_val": "sleep_deprivation" }, "=", { "const": 0 } ] },
+	{ "arithmetic": [ { "u_val": "fatigue" }, "=", { "const": 0 } ] },
+	{ "arithmetic": [ { "u_val": "stamina" }, "=", { "const": 99999 } ] }
+]},
 
 	{"type": "effect_on_condition",
     "id": "EOC_yellow_orb_social",

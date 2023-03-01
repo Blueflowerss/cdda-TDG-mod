@@ -21,8 +21,8 @@
   "flags": [
 	"LIGHT_1"
   ],
-  "weight": "50 g",
-  "volume": "15 ml"
+  "weight": "500 g",
+  "volume": "150 ml"
 },
 	{"type":"GENERIC",
 	"id":"office_yellow_orb_small",
@@ -37,11 +37,35 @@
 	"material": [
 		"glass"
 	 ],
-	  "weight": "5 g",
-	  "volume": "1 ml",
+	  "weight": "50 g",
+	  "volume": "10 ml",
 	"flags":[
 		"MC_MOBILE",
 		"MC_TURN_USED",
 		"MC_RANDOM_STUFF"]
-	}
+	},
+{
+    "type": "COMESTIBLE",
+  "id": "office_blue_orb",
+  "looks_like": "baseball",
+
+    "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_blue_orb" ],
+  "symbol": "o",
+  "color": "blue",
+  "name": {
+    "str": "blue orb"
+  },
+  "description": "A sky blue orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_1"
+  ],
+  "weight": "500 g",
+  "volume": "150 ml"
+}
 ]

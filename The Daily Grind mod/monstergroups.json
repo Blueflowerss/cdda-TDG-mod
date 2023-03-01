@@ -5,7 +5,7 @@
     "monsters": [
       { "monster": "mon_office_strider", "pack_size": [ 2, 3 ], "weight": 920 },
 	  { "monster": "mon_office_shellaxy", "weight": 350 },
-      { "monster": "mon_office_tumblefeed", "weight": 50 },
+      { "monster": "mon_office_tumblefeed", "weight": 10 },
       { "monster": "mon_office_anaconda", "weight": 10 }
     ]
   }
