@@ -67,5 +67,29 @@
   ],
   "weight": "500 g",
   "volume": "150 ml"
+},
+{
+    "type": "COMESTIBLE",
+  "id": "office_green_orb",
+  "looks_like": "baseball",
+
+    "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_green_orb" ],
+  "symbol": "o",
+  "color": "green",
+  "name": {
+    "str": "green orb"
+  },
+  "description": "A neon green orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_1"
+  ],
+  "weight": "500 g",
+  "volume": "150 ml"
 }
 ]

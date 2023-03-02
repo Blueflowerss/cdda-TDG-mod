@@ -33,12 +33,8 @@
     }
   ],
     "death_drops": {
-    "items": [
-      [
-        "office_yellow_orb",
-		3
-      ]
-    ]
+    "subtype":"distribution",
+	"items":["office_yellow_orb","office_blue_orb"]
   },
   "special_attacks": [
 	{
@@ -49,12 +45,12 @@
 	},
     {
       "type": "bite",
-      "cooldown": 8,
+      "cooldown": 20,
       "accuracy": 10,
       "damage_max_instance": [
         {
           "damage_type": "stab",
-          "amount": 32,
+          "amount": 16,
           "armor_multiplier": 0.1
         }
       ],
@@ -70,12 +66,12 @@
       ]
     }
   ],
-	"armor_bash": 10,
-	"armor_cut": 16,
-	"armor_bullet": 8,
-	"armor_elec": 0,
-	"vision_day": 35,
-	"vision_night": 10,
+	"armor_bash": 3,
+	"armor_cut": 6,
+	"armor_bullet": 4,
+	"armor_elec": 20,
+	"vision_day": 20,
+	"vision_night": 5,
 	"upgrades":false,
 	"anger_triggers": [
 		"HURT",
@@ -90,7 +86,7 @@
   "name": {
     "str": "strider"
   },
-  "description": "An ambulant stapler, it has 8 spindly legs and an eye in it's front.",
+  "description": "A strange creature that looks like a mix of a stapler and a spider. Its eight legs seem to be formed from misshapen pens sprouting from beneath its lower half, and its single eye located right at the front of the stapler's upper half scans the area for easy prey.",
   "default_faction": "office_stapler",
   "bodytype": "spider",
   "species": [
@@ -106,8 +102,8 @@
   ],
   "symbol": "s",
   "color": "white",
-  "aggression": 8,
-  "morale": 2,
+  "aggression": 10,
+  "morale": 0,
   "aggro_character": true,
   "death_drops": {
     "items": [
@@ -125,11 +121,11 @@
   "melee_damage": [
     {
       "damage_type": "cut",
-      "amount": 6
+      "amount": 2
     }
   ],
   "//": "13 hits to max intensity, 17 hits to max duration",
-  "dodge": 1,
+  "dodge": 0,
   "armor_cut": 2,
   "weakpoint_sets": [
     "wps_arthropod",
@@ -173,7 +169,7 @@
   "name": {
     "str": "shellaxy"
   },
-  "description": "if not for the spindly legs coming out it's sides and a jaw crack across it's casing, you'd mistake it for a regular desktop computer.",
+  "description": "What seems to be a regular desktop computer has suddenly sprouted countless thin, spindly legs from beneath its main body. A compartment which would normally house a disk tray instead opens up to reveal a maw made of razor sharp circuit cards, gnashing in frustration at anything nearby.",
   "default_faction": "office_monsters",
   "species": [
     "ROBOT"
@@ -181,64 +177,45 @@
   "volume": "10 L",
   "weight": "9 kg",
   "bleed_rate":300,
-  "hp": 160,
-  "speed": 80,
+  "hp": 80,
+  "speed": 60,
   "material": [
     "steel"
   ],
-   "death_drops": {
-    "items": [
-      [
-        "office_yellow_orb",
-		1
-      ]
-    ]
+    "death_drops": {
+    "subtype":"distribution",
+	"items":["office_yellow_orb","office_blue_orb"]
   },
   "symbol": "C",
   "color": "white",
   "morale": 5,
   "aggression": 8,
-  "melee_skill": 4,
   "upgrades":false,
   "harvest":"office_computer",
+  "melee_skill": 3,
   "melee_dice": 2,
-  "melee_dice_sides": 2,
+  "melee_dice_sides": 3,
   "melee_damage": [
     {
       "damage_type": "cut",
-      "amount": 6
+      "amount": 0
     }
   ],
   "special_attacks": [
     {
       "type": "bite",
-      "cooldown": 30,
-      "accuracy": 6,
-      "damage_max_instance": [
-        {
-          "damage_type": "stab",
-          "amount": 14,
-          "armor_multiplier": 0.3
-        },
-        {
-          "damage_type": "bash",
-          "amount": 6,
-          "armor_multiplier": 0.3
-        }
-      ]
+      "cooldown": 5
     },
     [
       "GRAB",
-      20
-    ],
-    [
-      "GRAB_DRAG",
-      10
+      7
     ]
   ],
   "armor_bash": 2,
   "armor_cut": 12,
   "armor_bullet": 10,
+  "vision_day": 5,
+  "vision_night": 5,
   "anger_triggers": [
     "PLAYER_CLOSE"
   ],
@@ -247,6 +224,8 @@
     "COLDPROOF",
 	"SEES",
 	"GOODHEARING",
+	"GRABS",
+	"NIGHT_INVISIBILITY",
     "NO_BREATHE",
     "PATH_AVOID_DANGER_1",
     "STUN_IMMUNE"
@@ -258,7 +237,7 @@
   "name": {
     "str": "tumblefeed"
   },
-  "description": "A large mass of slithering cables, it drags itself with extranenous cables. You feel as if getting close to it is a bad idea.",
+  "description": "This horrifying amalgamation of tangled CAT cables heaves its massive bulk around with several long cords sprouting from its main body. Each one of those cabled tendrils ends in numerous metallic teeth and claws that snap and scrape at the surfaces that they hook onto, and you have no doubt that those appendages would be a bad idea to be anywhere near.",
   "default_faction": "",
   "bodytype": "blob",
   "species": [
@@ -331,12 +310,8 @@
     "NOHEAD",
     "NO_BREATHE"
   ],
-   "death_drops": {
-    "items": [
-      [
-        "office_blue_orb",
-		5
-      ]
-    ]
+    "death_drops": {
+    "subtype":"distribution",
+	"items":["office_green_orb","office_blue_orb"]
   }
 }]

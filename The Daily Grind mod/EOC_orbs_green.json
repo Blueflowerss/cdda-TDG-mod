@@ -1,0 +1,24 @@
+[
+  {
+	  "type": "effect_on_condition",
+	  "id": "EOC_green_orb",
+	  "effect":{
+        "weighted_list_eocs": [
+          [ "EOC_blue_orb_accomodation", {"const":45} ],
+		  [ "EOC_blue_orb_struct_integrity", {"const":45 }]
+		  ]
+	  }
+  },
+{"type": "effect_on_condition",
+    "id": "EOC_green_orb_accomodation",
+    "effect": [
+	{"u_message": "Space Improvement - Improved beds"},
+	{"u_transform_radius":30,"ter_furn_transform":"orb_green_better_sleep"}
+]},
+{"type": "effect_on_condition",
+    "id": "EOC_green_orb_struct_integrity",
+    "effect": [
+	{"u_message": "Space Improvement - Improved structural integrity"},
+	{"u_transform_radius":30,"ter_furn_transform":"orb_green_structural_integrity"}
+]}
+]

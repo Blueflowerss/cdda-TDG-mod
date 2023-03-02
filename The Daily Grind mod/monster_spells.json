@@ -13,4 +13,21 @@
 		"min_aoe": 1,                                            
 		"max_aoe": 1,
 		"min_duration": 1
+ },
+ 
+{
+		"id": "shellaxy_ambush",                               
+		"type": "SPELL",
+		"name": "Shellaxy spring from ambush",                                       
+		"description": "spawns an shellaxy and banishes self.",
+		"flags": [ "SILENT","NO_EXPLOSION_SFX" ],       
+		"shape":"blast",
+		"min_range":1,
+		"max_range":3,
+		"valid_targets": [ "hostile" ],                         
+		"effect": "summon",       
+		"effect_str":"mon_office_shellaxy",
+		"extra_effects": [ { "id": "hallu_touch_suicide", "hit_self": true } ],
+		"target_self":true,
+		"min_duration":-1
  }]
