@@ -18,5 +18,14 @@
         "valid_flags": [ "WALL" ]
       }
     ]
+  },
+ {
+    "type": "ter_furn_transform",
+    "id": "orb_green_sleep_quality",
+    "field": [
+      {
+        "result": "fd_green_orb_sleep_quality"
+      }
+    ]
   }
 ]

@@ -68,7 +68,7 @@
   ],
 	"armor_bash": 3,
 	"armor_cut": 6,
-	"armor_bullet": 4,
+	"armor_bullet": 1,
 	"armor_elec": 20,
 	"vision_day": 20,
 	"vision_night": 5,
@@ -103,7 +103,7 @@
   "symbol": "s",
   "color": "white",
   "aggression": 10,
-  "morale": 0,
+  "morale": 5,
   "aggro_character": true,
   "death_drops": {
     "items": [
@@ -184,11 +184,11 @@
   ],
     "death_drops": {
     "subtype":"distribution",
-	"items":["office_yellow_orb","office_blue_orb"]
+	"items":["office_yellow_orb","office_blue_orb","office_green_orb"]
   },
   "symbol": "C",
   "color": "white",
-  "morale": 5,
+  "morale": 10,
   "aggression": 8,
   "upgrades":false,
   "harvest":"office_computer",
@@ -213,7 +213,7 @@
   ],
   "armor_bash": 2,
   "armor_cut": 12,
-  "armor_bullet": 10,
+  "armor_bullet": 3,
   "vision_day": 5,
   "vision_night": 5,
   "anger_triggers": [
@@ -294,7 +294,7 @@
       3
     ]
   ],
-  "armor_bash": 14,
+  "armor_bash": 9,
   "armor_cut": 4,
   "armor_bullet": 3,
   "armor_stab": 2,
@@ -312,6 +312,6 @@
   ],
     "death_drops": {
     "subtype":"distribution",
-	"items":["office_green_orb","office_blue_orb"]
+	"items":["office_green_orb","office_blue_orb","office_green_orb"]
   }
 }]

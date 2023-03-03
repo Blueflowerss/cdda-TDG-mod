@@ -1,0 +1,47 @@
+[
+{
+    "id": "fd_green_orb_sleep_quality",
+    "type": "field_type",
+    "looks_like": "t_null",
+    "intensity_levels": [
+	{ "name": "sleepy area", "sym": " ", "color": "white","transparent":true, 
+	"effects": [
+          { "effect_id": "green_orb_area_sleep_quality", "intensity": 1, "min_duration": "10 s", "immune_in_vehicle": false, "is_environmental": false }
+				]
+		}],
+    "priority": 2,
+    "phase": "solid",
+    "display_items": true,
+    "display_field": true
+  },
+{
+    "id": "fd_green_orb_focus",
+    "type": "field_type",
+    "looks_like": "t_null",
+    "intensity_levels": [
+	{ "name": "focus area", "sym": " ", "color": "white","transparent":true, 
+	"effects": [
+          { "effect_id": "green_orb_area_focus", "intensity": 1, "min_duration": "10 s", "immune_in_vehicle": false, "is_environmental": false }
+				]
+		}],
+    "priority": 2,
+    "phase": "solid",
+    "display_items": true,
+    "display_field": true
+  },
+{
+    "id": "fd_green_orb_noise",
+    "type": "field_type",
+    "looks_like": "t_null",
+    "intensity_levels": [
+	{ "name": "quiet area", "sym": " ", "color": "white","transparent":true, 
+	"effects": [
+          { "effect_id": "green_orb_area_noise", "intensity": 1, "min_duration": "10 s", "immune_in_vehicle": false, "is_environmental": false }
+				]
+		}],
+    "priority": 2,
+    "phase": "solid",
+    "display_items": true,
+    "display_field": true
+  }
+]
