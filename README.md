@@ -6,14 +6,15 @@ Working off the backrooms mod by TGWeaver
 -features as of now
 
 	-most of the stuff from the backrooms mod
-	-4 creatures
-		-camraconda- rare, has a deadly sleeping attack and can kill easily
+	-3 creatures
 		-strider - a living stapler, a small jumping spider-like creature which uses hit-n-run tactics against the enemy, usually in packs
 		-shellaxy - An ambush computer with a deadly bite, roams the halls for now, in the future it will ambush the player in the cubicles
 		-tumblefeed - A slithering mass of cables with grappling attacks.
 	-orbs
 		-yellow orbs give skills and some progress in 3 proficiencies
 		-small yellow orbs give some progress in a single proficiency
+		-blue orbs "solve" problems, currently they solve you being wounded and solve you being tired
+		-green orbs "upgrade" areas, for now it's stuff like their structural integrity or giving you buffs while you're in them
 	-a strange door
 		-you can find it while wandering the fields, it's extremely rare though
 		-examine it to enter the offices
