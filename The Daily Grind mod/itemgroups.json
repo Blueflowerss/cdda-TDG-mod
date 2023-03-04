@@ -508,7 +508,7 @@
       { "group": "backrooms_kitchen_drawers", "prob": 100 },
       { "group": "SUS_appliances_cupboard", "prob": 50 },
       {
-        "collection": [ { "group": "SUS_breakfast_cupboard" }, { "group": "SUS_coffee_cupboard", "prob": 80 } ],
+        "collection": [ { "group": "SUS_breakfast_cupboard" }, { "group": "SUS_coffee_cupboard", "prob": 80 }, { "item" : "office_coffeemaker", "prob": 2 } ],
         "prob": 50
       },
       { "group": "SUS_cookware", "prob": 50 },
@@ -528,6 +528,7 @@
       { "group": "SUS_pantry", "prob": 15 },
       { "group": "groce_condiment", "count": [ 2, 3 ], "prob": 25 },
       { "group": "SUS_spice_collection", "prob": 25 },
+	  { "item" : "office_coffeemaker", "prob": 2 },
       { "group": "SUS_coffee_cupboard", "prob": 25 },
       { "group": "SUS_breakfast_cupboard", "prob": 10 },
       { "group": "preserved_food", "count": [ 1, 2 ], "prob": 10 }

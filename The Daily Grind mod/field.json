@@ -58,5 +58,20 @@
     "phase": "solid",
     "display_items": true,
     "display_field": true
+  },
+{
+    "id": "fd_green_orb_regen",
+    "type": "field_type",
+    "looks_like": "t_null",
+    "intensity_levels": [
+	{ "name": "healing area", "sym": " ", "color": "white","transparent":true, 
+	"effects": [
+          { "effect_id": "green_orb_area_regen", "intensity": 1, "min_duration": "10 s", "immune_in_vehicle": false, "is_environmental": false }
+				]
+		}],
+    "priority": 2,
+    "phase": "solid",
+    "display_items": true,
+    "display_field": true
   }
 ]

@@ -14,7 +14,8 @@
     "id": "EOC_blue_orb_heal",
     "effect": [
 	{"u_message": "You no longer feel any previous pain and you feel your wounds closing up."},
-	{ "u_lose_effect": "bleed" },
+	{ "u_lose_effect":"bleed" },
+	{ "u_lose_effect":"bite" },
 	{ "arithmetic": [ { "u_val": "pain" }, "=", { "const": 0 } ] }
 ]},
 	

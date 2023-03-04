@@ -8,5 +8,17 @@
     "types": [ "SLEEP" ],
     "category": [ "HUMAN" ],
     "fatigue_modifier": -0.45
+  },
+  {
+    "type": "mutation",
+    "id": "GREEN_ORB_REGENERATION",
+    "name": { "str": "In a regenerating area" },
+    "points": 3,
+    "description": "Your body is healing.",
+    "types": [ "SLEEP" ],
+    "category": [ "HUMAN" ],
+	"healing_awake": 0.8,
+	"healing_multiplier": 2.5,
+	"mending_modifier": 16
   }
 ]

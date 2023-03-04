@@ -336,7 +336,7 @@
   "default_faction": "office_monsters",
   "bodytype": "human",
   "species": [
-    "HUMAN"
+    "NETHER"
   ],
   "diff": 2,
   "volume": "62500 ml",
@@ -387,7 +387,7 @@
   ],
   "bleed_rate": 0,
   "vision_night": 3,
-  "harvest": "zombie",
+  "harvest": "office_human",
   "special_attacks": [
     {
       "id": "smash",

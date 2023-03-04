@@ -8,7 +8,7 @@
           [ "EOC_green_orb_accomodation", {"const":45} ],
 		  [ "EOC_green_orb_struct_integrity", {"const":45 }],
 		  [ "EOC_green_orb_focus", {"const":45},
-			"EOC_green_orb_noise", {"const":45}]
+			"EOC_green_orb_move", {"const":45}]
 		  ]
 	  },
 	  "false_effect":[
@@ -46,5 +46,11 @@
     "effect": [
 	{"u_message": "Area Improvement - Matter transition improved."},
 	{"u_set_field":"fd_green_orb_move","radius":20}
+]},
+{"type": "effect_on_condition",
+    "id": "EOC_green_orb_regen",
+    "effect": [
+	{"u_message": "Area Improvement - Organic life mending improved."},
+	{"u_set_field":"fd_green_orb_regen","radius":20}
 ]}
 ]

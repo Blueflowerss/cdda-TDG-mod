@@ -100,5 +100,10 @@
       "default": false
     },
     "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter","office_spawn_enemies" ] } ]
-  }
+  },
+  {
+	"type": "effect_on_condition",
+    "id": "EOC_xeno_coffee",
+    "effect": [ { "u_add_effect":"eff_xeno_coffee","duration":"40 m","intensity":5 } ]
+  }	  
 ]
