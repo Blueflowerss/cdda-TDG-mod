@@ -151,7 +151,12 @@
     }
   ],
   "anger_triggers": [
-    "PLAYER_CLOSE"
+    "PLAYER_CLOSE",
+	"PLAYER_WEAK"
+  ],
+  "fear_triggers":[
+	"HURT",
+	"FRIEND_DIED"
   ],
   "flags": [
     "SEES",
@@ -172,7 +177,7 @@
   "description": "What seems to be a regular desktop computer has suddenly sprouted countless thin, spindly legs from beneath its main body. A compartment which would normally house a disk tray instead opens up to reveal a maw made of razor sharp circuit cards, gnashing in frustration at anything nearby.",
   "default_faction": "office_monsters",
   "species": [
-    "ROBOT"
+    "SPIDER"
   ],
   "volume": "10 L",
   "weight": "9 kg",
@@ -184,7 +189,7 @@
   ],
     "death_drops": {
     "subtype":"distribution",
-	"items":["office_yellow_orb","office_blue_orb","office_green_orb"]
+	"items":["office_yellow_orb","office_blue_orb"]
   },
   "symbol": "C",
   "color": "white",
@@ -219,6 +224,9 @@
   "anger_triggers": [
     "PLAYER_CLOSE"
   ],
+  "fear_triggers":[
+	"HURT"
+  ],
   "flags": [
     "BASHES",
     "COLDPROOF",
@@ -237,7 +245,7 @@
   "name": {
     "str": "tumblefeed"
   },
-  "description": "This horrifying amalgamation of tangled CAT cables heaves its massive bulk around with several long cords sprouting from its main body. Each one of those cabled tendrils ends in numerous metallic teeth and claws that snap and scrape at the surfaces that they hook onto, and you have no doubt that those appendages would be a bad idea to be anywhere near.",
+  "description": " ",
   "default_faction": "",
   "bodytype": "blob",
   "species": [
@@ -312,6 +320,6 @@
   ],
     "death_drops": {
     "subtype":"distribution",
-	"items":["office_green_orb","office_blue_orb","office_green_orb"]
+	"items":["office_green_orb"]
   }
 }]

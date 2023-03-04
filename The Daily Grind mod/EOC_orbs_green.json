@@ -19,7 +19,7 @@
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_accomodation",
     "effect": [
-	{"u_message": "Area Improvement - Improved sleep quality."},
+	{"u_message": "Area Improvement - Decreased mind entropy."},
 	{"u_transform_radius":20,"ter_furn_transform":"orb_green_better_sleep"},
 	{"u_set_field":"fd_green_orb_sleep_quality","radius":20}
 ]},
@@ -32,7 +32,7 @@
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_focus",
     "effect": [
-	{"u_message": "Area Improvement - Improved focus."},
+	{"u_message": "Area Improvement - Mind helper."},
 	{"u_set_field":"fd_green_orb_focus","radius":20}
 ]},
 {"type": "effect_on_condition",
@@ -40,5 +40,11 @@
     "effect": [
 	{"u_message": "Area Improvement - Sound absorbant."},
 	{"u_set_field":"fd_green_orb_noise","radius":20}
+]},
+{"type": "effect_on_condition",
+    "id": "EOC_green_orb_move",
+    "effect": [
+	{"u_message": "Area Improvement - Matter transition improved."},
+	{"u_set_field":"fd_green_orb_move","radius":20}
 ]}
 ]

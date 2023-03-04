@@ -1,0 +1,12 @@
+[
+  {
+    "type": "mutation",
+    "id": "GREEN_ORB_LESS_SLEEP",
+    "name": { "str": "In a sleepless area" },
+    "points": 3,
+    "description": "Your brain seems energized here.",
+    "types": [ "SLEEP" ],
+    "category": [ "HUMAN" ],
+    "fatigue_modifier": -0.45
+  }
+]

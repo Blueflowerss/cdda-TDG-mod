@@ -19,7 +19,7 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_1"
+	"LIGHT_9"
   ],
   "weight": "500 g",
   "volume": "150 ml"
@@ -42,7 +42,7 @@
 	  "weight": "50 g",
 	  "volume": "10 ml",
 	"flags":[
-		"LIGHT_1"]
+		"LIGHT_5"]
 	},
 {
     "type": "COMESTIBLE",
@@ -63,7 +63,7 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_1"
+	"LIGHT_9"
   ],
   "weight": "500 g",
   "volume": "150 ml"
@@ -87,7 +87,7 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_1"
+	"LIGHT_9"
   ],
   "weight": "500 g",
   "volume": "150 ml"
