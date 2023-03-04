@@ -12,25 +12,30 @@ Working off the backrooms mod by TGWeaver
 		-tumblefeed - A slithering mass of cables with grappling attacks.
 		-paper pusher - Your coworker, will rip your arm off.
 	-orbs
-		-yellow orbs give skills and some progress in 3 proficiencies
-		-small yellow orbs give some progress in a single proficiency
-		-blue orbs "solve" problems, currently they solve you being wounded and solve you being tired
+		-yellow orbs give one level in a random skill
+		-small yellow orbs give around 50% progress in a random proficiency
+		-blue orbs "solve" problems, currently they can patch you up and make you less tired
 		-green orbs "upgrade" areas, for now it's stuff like their structural integrity or giving you buffs while you're in them
+			-buffs like
+				-focus area - reading and/or learning stuff here is super easy.
+				-sleepless area - sleep need not apply, your rest falls slower while in here.
+				-regeneration area - you heal faster here, as if you had the "regeneration" mutation
 		-purple orbs "upgrade" your body, this just means you get semi-random mutations, or in some cases a random skill.
 	-xenotech
 		-xeno coffeemaker can create xeno coffee, a super useful buff to help combat the office monsters
+			-check in OTHER/OFFICE for recipe
 			-can be randomly found where coffeemakers usually are
 	-a strange door
-		-you can find it while wandering the fields, it's extremely rare though
-		-examine it to enter the offices
+		-you can find it while wandering the fields, it's extremely rare
+		-examine it to be teleported to a random chamber inside the Officium Mundi
 	-exit
-		-sometimes in the offices you can find a metal door, which you can use to exit the dimension
+		-a metal door, use it to return to the door you used to enter the dimension.
 	-some changes to the backrooms
 		-making it more walkable
 		-adding more furniture
 		-making the rooms' placement less random
-		-add respawning mechanics, you'll never feel alone
-A rough roadmap
+		-monsters respawn if you kill too many in a given area
+A rough roadmap (which i stopped updating)
 
 	-add various critures 
 		-camraconda DONE'ish
