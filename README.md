@@ -17,6 +17,9 @@ Working off the backrooms mod by TGWeaver
 		-blue orbs "solve" problems, currently they solve you being wounded and solve you being tired
 		-green orbs "upgrade" areas, for now it's stuff like their structural integrity or giving you buffs while you're in them
 		-purple orbs "upgrade" your body, this just means you get semi-random mutations, or in some cases a random skill.
+	-xenotech
+		-xeno coffeemaker can create xeno coffee, a super useful buff to help combat the office monsters
+			-can be randomly found where coffeemakers usually are
 	-a strange door
 		-you can find it while wandering the fields, it's extremely rare though
 		-examine it to enter the offices
