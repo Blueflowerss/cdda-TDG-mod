@@ -103,22 +103,5 @@
 	"weight": "9 kg",
 	"volume": "12 L",
     "description": "An unpowered bleige computer. Good for electronics."
-  },
-  {
-    "type": "GENERIC",
-    "id": "broken_office_shellaxy",
-	"symbol": ",",
-	"color": "red",
-    "name": { "str": "bloody desktop computer" },
-	"price": 1000,
-	"price_postapoc": 10,
-	"material": [
-		"steel",
-		"plastic",
-		"flesh"
-	],
-	"weight": "16 kg",
-	"volume": "12 L",
-    "description": "An unpowered bleige computer, covered in blood. Good for electronics."
   }
 ]

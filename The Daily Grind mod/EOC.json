@@ -21,7 +21,9 @@
     "id": "EOC_OW_teleportreturn",
     "//": "Teleports you to a random field in the overworld.",
     "effect": [
+	{"u_location_variable": { "global_val": "OM_enterspot" }},
       { "u_teleport": { "global_val": "OM_returnspot" }, "force": true },
+	  { "u_add_var": "offices_visited", "type": "bool", "context": "office","value":"true" },
 	  {"u_message": "You step through the door."}
     ],
 	"false_effect": [
@@ -42,14 +44,17 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_enterspot",
     "//": "Picks a office chamber.",
+	"condition":{"not":{"u_has_var":"offices_visited"}},
     "effect": [
-      {
+		{"u_message":"test"},
+	  {
+		
         "u_location_variable": { "global_val": "OM_enterspot" },
         "target_params": {
           "om_terrain": "backfloorchamber",
           "om_terrain_match_type": "CONTAINS",
-          "search_range": 1200,
-          "min_distance": 0,
+          "search_range": 300,
+          "min_distance": 200,
           "z": -9,
           "random": true
         }
@@ -59,16 +64,23 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
+	"condition":{"not":{"u_has_var":"offices_visited"}},
     "effect": [
 	{"u_location_variable": { "global_val": "OM_returnspot" }},
-      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
+	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
 	{"u_message": "You step through the door, looking back you find the door missing."}
-    ]
+    ],
+	"false_effect":[
+	{"u_location_variable": { "global_val": "OM_returnspot" }},
+	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
+	{"u_message": "You step through the door."}
+    ],
+	]
   },
   {
     "type": "effect_on_condition",
     "id": "office_spawn_enemies",
-    "recurrence": [ "1 minutes", "3 minutes" ],
+    "recurrence": [ "5 minutes", "10 minutes" ],
     "global": true,
     "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{ "compare_int": [ { "u_val": "monsters_nearby", "radius": 60 }, "<", { "const": 20 } ] }]},
 	"deactivate_condition":{"not":{"u_at_om_location": "backfloorchamber"}},
@@ -92,6 +104,7 @@
 	]
     }
   },
+  
 {
     "type": "effect_on_condition",
     "id": "EOC_OFFICE_warpdoor",
