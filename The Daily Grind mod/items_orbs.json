@@ -91,5 +91,29 @@
   ],
   "weight": "500 g",
   "volume": "150 ml"
+},
+{
+    "type": "COMESTIBLE",
+  "id": "office_purple_orb",
+  "looks_like": "baseball",
+
+    "comestible_type": "MED",
+    "consumption_effect_on_conditions": [ "EOC_purple_orb" ],
+  "symbol": "o",
+  "color": "pink",
+  "name": {
+    "str": "purple orb"
+  },
+  "description": "A neon purple orb, you wonder what is it's purpose.",
+  "price": 100000,
+  "price_postapoc": 10000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_20"
+  ],
+  "weight": "500 g",
+  "volume": "150 ml"
 }
 ]

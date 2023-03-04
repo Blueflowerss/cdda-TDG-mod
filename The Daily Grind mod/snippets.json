@@ -300,4 +300,10 @@
 	"category": "<office_camraconda_harvest>",
 	"text": [
 "The eerie nature of this creature leaves you somewhat nervous to imagine what it would look like within, but you slice into it anyways. Its thick rubbery skin takes a good amount of work to cut through, spraying out minute sparks once you breach into the innards of the creature. Within, it is almost entirely composed of long fibrous material that isn't quite flesh or rubber, and its organs are incredibly stretched out to accommodate its snake-like form. As you reach the head, it seems to become much more mechanical, with the long fibers having housed copper wires that link up to the internal camera which formed its cyclopean skull."]
+},
+{
+	"type": "snippet",
+	"category": "<office_human_harvest>",
+	"text": [
+"."]
 }]

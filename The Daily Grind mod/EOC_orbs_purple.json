@@ -1,0 +1,345 @@
+[
+	{
+	  "type": "effect_on_condition",
+	  "id": "EOC_purple_orb",
+	  "condition":{"u_has_var":"green_orb_increment"},
+	  "effect":{
+        "weighted_list_eocs": [
+			[ "EOC_purple_orb_mut_ROBUST", {"const":45} ],
+			[ "EOC_purple_orb_mut_WEAKSCENT", {"const":45} ],
+			[ "EOC_purple_orb_mut_DEX_UP_2", {"const":45} ],
+			[ "EOC_purple_orb_mut_INT_UP_2", {"const":45} ],
+			[ "EOC_purple_orb_mut_PER_UP_2", {"const":45} ],
+			[ "EOC_purple_orb_mut_STR_UP_2", {"const":45} ],
+			[ "EOC_purple_orb_mut_PRETTY", {"const":45} ],
+			[ "EOC_purple_orb_mut_GOODHEARING", {"const":45} ],
+			[ "EOC_purple_orb_mut_NONADDICTIVE", {"const":45} ],
+			[ "EOC_purple_orb_mut_FASTHEALER2", {"const":45} ],
+			[ "EOC_purple_orb_mut_WAKEFUL2", {"const":45} ],
+			[ "EOC_purple_orb_mut_NIGHTVISION2", {"const":45} ],
+			[ "EOC_purple_orb_mut_STRONG_LEGS", {"const":45} ],
+			[ "EOC_purple_orb_mut_STRONGKNEES", {"const":45} ],
+			[ "EOC_purple_orb_mut_POISRESIST", {"const":45} ],
+			[ "EOC_purple_orb_mut_RESISTWARM", {"const":45} ],
+			[ "EOC_purple_orb_mut_TOLERANCE", {"const":45} ],
+			[ "EOC_purple_orb_mut_ALCMET", {"const":45} ],
+			[ "EOC_purple_orb_mut_ADRENALINE2", {"const":45} ],
+			[ "EOC_purple_orb_mut_FLEET", {"const":45} ],
+			[ "EOC_purple_orb_mut_RESISTCHILL", {"const":45} ],
+			[ "EOC_purple_orb_mut_QUICK", {"const":45} ],
+			[ "EOC_purple_orb_mut_EAGLEEYED", {"const":45} ],
+			[ "EOC_purple_orb_mut_INFIMMUNE", {"const":45} ],
+			[ "EOC_purple_orb_mut_PARAIMMUNE", {"const":45} ],
+			[ "EOC_purple_orb_mut_ANIMALEMPATH2", {"const":45} ],
+			[ "EOC_purple_orb_mut_LIGHTSTEP", {"const":45} ],
+			[ "EOC_purple_orb_mut_FAST_REFLEXES", {"const":45} ],
+			[ "EOC_purple_orb_mut_GOODCARDIO", {"const":45} ],
+			[ "EOC_purple_orb_mut_EASYSLEEPER2", {"const":45} ],
+			[ "EOC_purple_orb_mut_THICKSKIN", {"const":45} ],
+			[ "EOC_purple_orb_mut_PAINREC2", {"const":45} ],
+			[ "EOC_purple_orb_mut_RADIOGENIC", {"const":45} ],
+			[ "EOC_yellow_orb", {"const":200} ]
+		  ]
+	  },
+	  "false_effect":[
+		  {"u_add_var":"green_orb_increment","time":true},
+		  {"run_eocs":["EOC_green_orb"]}
+	  ]
+  },
+{"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_ROBUST",
+        "condition":{"not":{"u_has_trait":"ROBUST"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Robust Genetics"},
+    {"u_add_trait":"ROBUST"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_WEAKSCENT",
+        "condition":{"not":{"u_has_trait":"WEAKSCENT"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Weak Scent"},
+    {"u_add_trait":"WEAKSCENT"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_DEX_UP_2",
+        "condition":{"not":{"u_has_trait":"DEX_UP_2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Dextrous"},
+    {"u_add_trait":"DEX_UP_2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_INT_UP_2",
+        "condition":{"not":{"u_has_trait":"INT_UP_2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Smart"},
+    {"u_add_trait":"INT_UP_2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_PER_UP_2",
+        "condition":{"not":{"u_has_trait":"PER_UP_2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Perceptive"},
+    {"u_add_trait":"PER_UP_2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_STR_UP_2",
+        "condition":{"not":{"u_has_trait":"STR_UP_2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Strong"},
+    {"u_add_trait":"STR_UP_2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_PRETTY",
+        "condition":{"not":{"u_has_trait":"PRETTY"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Pretty"},
+    {"u_add_trait":"PRETTY"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_GOODHEARING",
+        "condition":{"not":{"u_has_trait":"GOODHEARING"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Good Hearing"},
+    {"u_add_trait":"GOODHEARING"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_NONADDICTIVE",
+        "condition":{"not":{"u_has_trait":"NONADDICTIVE"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Addiction Resistant"},
+    {"u_add_trait":"NONADDICTIVE"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_FASTHEALER2",
+        "condition":{"not":{"u_has_trait":"FASTHEALER2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Fast Healer"},
+    {"u_add_trait":"FASTHEALER2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_WAKEFUL2",
+        "condition":{"not":{"u_has_trait":"WAKEFUL2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Very Little Sleep"},
+    {"u_add_trait":"WAKEFUL2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_NIGHTVISION2",
+        "condition":{"not":{"u_has_trait":"NIGHTVISION2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - High Night Vision"},
+    {"u_add_trait":"NIGHTVISION2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_STRONG_LEGS",
+        "condition":{"not":{"u_has_trait":"STRONG_LEGS"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Strong Legs"},
+    {"u_add_trait":"STRONG_LEGS"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_STRONGKNEES",
+        "condition":{"not":{"u_has_trait":"STRONGKNEES"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Strong Knees"},
+    {"u_add_trait":"STRONGKNEES"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_POISRESIST",
+        "condition":{"not":{"u_has_trait":"POISRESIST"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Poison Resistant"},
+    {"u_add_trait":"POISRESIST"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_RESISTWARM",
+        "condition":{"not":{"u_has_trait":"RESISTWARM"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Heat Tolerance"},
+    {"u_add_trait":"RESISTWARM"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_TOLERANCE",
+        "condition":{"not":{"u_has_trait":"TOLERANCE"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Substance Tolerance"},
+    {"u_add_trait":"TOLERANCE"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_ALCMET",
+        "condition":{"not":{"u_has_trait":"ALCMET"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Alcohol Metabolism"},
+    {"u_add_trait":"ALCMET"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_ADRENALINE2",
+        "condition":{"not":{"u_has_trait":"ADRENALINE2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Combat Adaptation"},
+    {"u_add_trait":"ADRENALINE2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_FLEET",
+        "condition":{"not":{"u_has_trait":"FLEET"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Fleet-Footed"},
+    {"u_add_trait":"FLEET"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_RESISTCHILL",
+        "condition":{"not":{"u_has_trait":"RESISTCHILL"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Cold Tolerance"},
+    {"u_add_trait":"RESISTCHILL"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_QUICK",
+        "condition":{"not":{"u_has_trait":"QUICK"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Quick"},
+    {"u_add_trait":"QUICK"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_EAGLEEYED",
+        "condition":{"not":{"u_has_trait":"EAGLEEYED"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Scout"},
+    {"u_add_trait":"EAGLEEYED"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_INFIMMUNE",
+        "condition":{"not":{"u_has_trait":"INFIMMUNE"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Infection Immune"},
+    {"u_add_trait":"INFIMMUNE"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_PARAIMMUNE",
+        "condition":{"not":{"u_has_trait":"PARAIMMUNE"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Parasite Immune"},
+    {"u_add_trait":"PARAIMMUNE"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_ANIMALEMPATH2",
+        "condition":{"not":{"u_has_trait":"ANIMALEMPATH2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Animal Kinship"},
+    {"u_add_trait":"ANIMALEMPATH2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_LIGHTSTEP",
+        "condition":{"not":{"u_has_trait":"LIGHTSTEP"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Light Step"},
+    {"u_add_trait":"LIGHTSTEP"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_FAST_REFLEXES",
+        "condition":{"not":{"u_has_trait":"FAST_REFLEXES"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Fast Reflexes"},
+    {"u_add_trait":"FAST_REFLEXES"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_GOODCARDIO",
+        "condition":{"not":{"u_has_trait":"GOODCARDIO"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Indefatigable"},
+    {"u_add_trait":"GOODCARDIO"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_EASYSLEEPER2",
+        "condition":{"not":{"u_has_trait":"EASYSLEEPER2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Practiced Sleeper"},
+    {"u_add_trait":"EASYSLEEPER2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_THICKSKIN",
+        "condition":{"not":{"u_has_trait":"THICKSKIN"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Thick-Skinned"},
+    {"u_add_trait":"THICKSKIN"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_PAINREC2",
+        "condition":{"not":{"u_has_trait":"PAINREC2"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Quick Pain Recovery"},
+    {"u_add_trait":"PAINREC2"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+
+        {"type": "effect_on_condition",
+    "id": "EOC_purple_orb_mut_RADIOGENIC",
+        "condition":{"not":{"u_has_trait":"RADIOGENIC"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Radiogenic"},
+    {"u_add_trait":"RADIOGENIC"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]}
+]

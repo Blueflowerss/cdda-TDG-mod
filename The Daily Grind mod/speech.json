@@ -1,0 +1,50 @@
+[
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "a low moaning sound!",
+    "volume": 32
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "\"Finisheeed your papeeeers?\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "\"Huuuuuurry uuuup!\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "\"I neeeeeeeed coffeeeeee..\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "\"Meeeeeeting'ssss in teeeeeen!\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "\"GEEEET AWAAAY FROM MEEEE!\"",
+    "volume": 32
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "idle talk.",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_office_human" ],
+    "sound": "your friendly coworker.",
+    "volume": 20
+  }
+]

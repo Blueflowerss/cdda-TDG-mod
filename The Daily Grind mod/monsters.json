@@ -102,8 +102,8 @@
   ],
   "symbol": "s",
   "color": "white",
-  "aggression": 10,
-  "morale": 5,
+  "aggression": 30,
+  "morale": 20,
   "aggro_character": true,
   "death_drops": {
     "items": [
@@ -193,8 +193,8 @@
   },
   "symbol": "C",
   "color": "white",
-  "morale": 10,
-  "aggression": 8,
+  "morale": 40,
+  "aggression": 20,
   "upgrades":false,
   "harvest":"office_computer",
   "melee_skill": 3,
@@ -242,6 +242,7 @@
 {
   "id": "mon_office_tumblefeed",
   "type": "MONSTER",
+  "copy-from":"mon_vinebeast",
   "name": {
     "str": "tumblefeed"
   },
@@ -309,6 +310,7 @@
   "armor_elec": 4,
   "bleed_rate": 30,
   "harvest": "office_wireball",
+  "dissect": "",
   "flags": [
 	"SEES",
 	"BASHES",
@@ -322,4 +324,112 @@
     "subtype":"distribution",
 	"items":["office_green_orb"]
   }
+},
+{
+  "id": "mon_office_human",
+  "type": "MONSTER",
+  "name": {
+    "str": "paper pusher"
+  },
+  "copy-from":"mon_dementia",
+  "description": "Seemingly a regular office worker.. without any facial features.  Seems eager to strangle the life from you.",
+  "default_faction": "office_monsters",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "diff": 2,
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 380,
+  "speed": 110,
+  "material": [
+    "paper"
+  ],
+  "symbol": "P",
+  "color": "white",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 7,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 1
+    }
+  ],
+  "dodge": 3,
+  "armor_bash": 8,
+  "armor_cut": 4,
+  "armor_bullet": 8,
+  "armor_stab": 8,
+  "armor_elec": 2,
+  "weakpoints": [
+    {
+      "name": "the head",
+      "armor_mult": {
+        "physical": 0.5
+      },
+      "coverage": 3
+    },
+    {
+      "name": "the eye",
+      "armor_mult": {
+        "physical": 0
+      },
+      "coverage": 1
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_wp_demihuman"
+  ],
+  "bleed_rate": 0,
+  "vision_night": 3,
+  "harvest": "zombie",
+  "special_attacks": [
+    {
+      "id": "smash",
+      "throw_strength": 72,
+      "cooldown": 30
+    },
+    {
+      "id": "bio_op_takedown",
+      "cooldown": 20
+    },
+    [
+      "RANGED_PULL",
+      20
+    ],
+    [
+      "GRAB_DRAG",
+      10
+    ],
+    [
+      "PARROT",
+      300
+    ]
+  ],
+    "death_drops": {
+    "subtype":"distribution",
+	"items":["office_purple_orb"]
+  },
+  "flags": [
+    "SEES",
+    "GOODHEARING",
+    "SMELLS",
+    "BASHES",
+    "GROUP_BASH",
+    "NO_BREATHE",
+	"CAN_OPEN_DOORS",
+	"FLAMMABLE",
+	"GRABS",
+	"HUMAN",
+	"PATH_AVOID_DANGER_2",
+	"ATTACKMON",
+    "PUSH_MON",
+    "PUSH_VEH",
+    "RANGED_ATTACKER"
+  ]
 }]
