@@ -313,7 +313,7 @@
     "type": "terrain",
     "id": "t_decision_tree",
     "name": "Decision Tree",
-    "description": "Imagine a tree, replace the leaves with tiny monitors and cover it in LED lights, that's a decision tree. Lizard creatures travel around the tree.",
+    "description": "A LED ornamented tree, glowing with blue colors. Monitors of various sizes hang off the branches like leaves. You notice lizards with displays instead of heads travelling around the tree.",
 	"light_emitted": 25,
 	"symbol":"4",
 	"color":"blue",

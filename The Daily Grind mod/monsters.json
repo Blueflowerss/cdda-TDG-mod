@@ -160,7 +160,6 @@
   ],
   "flags": [
     "SEES",
-    "HIT_AND_RUN",
 	"GOODHEARING",
     "CLIMBS",
 	"GROUP_MORALE",
@@ -182,8 +181,8 @@
   "volume": "10 L",
   "weight": "9 kg",
   "bleed_rate":300,
-  "hp": 80,
-  "speed": 60,
+  "hp": 180,
+  "speed": 80,
   "material": [
     "steel"
   ],

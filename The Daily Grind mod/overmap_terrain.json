@@ -77,7 +77,7 @@
         },
 		{
 			"chunks": [
-			["null",400],
+			["null",100],
 			["mx_decision_tree",1]
 			],
 			"x":0,
