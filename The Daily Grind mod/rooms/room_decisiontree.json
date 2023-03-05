@@ -1,0 +1,40 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_decision_tree",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "---Q---Q--  ----Q--Q---Q",
+        "-                       ",
+        "Q oo  ooo  oooo  o  oo  ",
+        "-oo   oo oo oo   oo     ",
+        "-  oo  o  oo  oo oooo oo",
+        "- o oo      oo oo       ",
+        "Q    o   oo   oo  ooo   ",
+        "- oooooo    ooooo  oo   ",
+        "-o oo     o     oo      ",
+        "- o o ooo ooooo ooo oooo",
+        "    ooo              oo ",
+        "  o     o       oo      ",
+        "- o  oooo   X   oo  ooo ",
+        "-o   oooo       o ooo   ",
+        "Q  oooo                 ",
+        "-  ooo  o ooooo ooooo  o",
+        "Q  o  oo  ooo   oo      ",
+        "- oooooo   ooo    oooo  ",
+        "- o  ooo     oooo  oo   ",
+        "Q    o    ooo    oooo  o",
+        "-oo oo oooo             ",
+        "-          ooooo oooooo ",
+        "Q  ooo     ooo oo  ooo  ",
+        "-  oooo  oo   oo     oo "
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "backrooms_palette" ],
+	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
+					"X":["t_decision_tree"]}
+    }
+  }
+]

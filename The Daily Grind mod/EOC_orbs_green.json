@@ -2,27 +2,26 @@
   {
 	  "type": "effect_on_condition",
 	  "id": "EOC_green_orb",
-	  "condition":{"u_has_var":"green_orb_increment"},
 	  "effect":{
         "weighted_list_eocs": [
           [ "EOC_green_orb_accomodation", {"const":45} ],
 		  [ "EOC_green_orb_struct_integrity", {"const":45 }],
-		  [ "EOC_green_orb_focus", {"const":45},
-			"EOC_green_orb_move", {"const":45}]
+		  [ "EOC_green_orb_focus", {"const":45}],
+			["EOC_green_orb_move", {"const":45}],
+			["EOC_green_orb_regen", {"const":45}]
 		  ]
-	  },
-	  "false_effect":[
-		  {"u_add_var":"green_orb_increment","time":true},
-		  {"run_eocs":["EOC_green_orb"]}
-	  ]
+	  }
   },
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_accomodation",
+	"condition":{"not":{"u_is_in_field":"fd_green_orb_sleep_quality"}},
     "effect": [
 	{"u_message": "Area Improvement - Decreased mind entropy."},
 	{"u_transform_radius":20,"ter_furn_transform":"orb_green_better_sleep"},
-	{"u_set_field":"fd_green_orb_sleep_quality","radius":20}
-]},
+	{"u_set_field":"fd_green_orb_sleep_quality","radius":20}],
+	"false_effect":[
+	{"run_eocs":"EOC_green_orb"}
+	]},
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_struct_integrity",
     "effect": [
@@ -31,26 +30,38 @@
 ]},
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_focus",
+	"condition":{"not":{"u_is_in_field":"fd_green_orb_focus"}},
     "effect": [
 	{"u_message": "Area Improvement - Mind helper."},
-	{"u_set_field":"fd_green_orb_focus","radius":20}
-]},
+	{"u_set_field":"fd_green_orb_focus","radius":20}],
+	"false_effect":[
+	{"run_eocs":"EOC_green_orb"}
+	]},
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_noise",
+	"condition":{"not":{"u_is_in_field":"fd_green_orb_noise"}},
     "effect": [
 	{"u_message": "Area Improvement - Sound absorbant."},
-	{"u_set_field":"fd_green_orb_noise","radius":20}
-]},
+	{"u_set_field":"fd_green_orb_noise","radius":20}],
+	"false_effect":[
+	{"run_eocs":"EOC_green_orb"}
+	]},
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_move",
+	"condition":{"not":{"u_is_in_field":"fd_green_orb_move"}},
     "effect": [
 	{"u_message": "Area Improvement - Matter transition improved."},
-	{"u_set_field":"fd_green_orb_move","radius":20}
-]},
+	{"u_set_field":"fd_green_orb_move","radius":20}],
+	"false_effect":[
+	{"run_eocs":"EOC_green_orb"}
+	]},
 {"type": "effect_on_condition",
     "id": "EOC_green_orb_regen",
+	"condition":{"not":{"u_is_in_field":"fd_green_orb_regen"}},
     "effect": [
 	{"u_message": "Area Improvement - Organic life mending improved."},
-	{"u_set_field":"fd_green_orb_regen","radius":20}
-]}
+	{"u_set_field":"fd_green_orb_regen","radius":20}],
+	"false_effect":[
+	{"run_eocs":"EOC_green_orb"}
+	]}
 ]

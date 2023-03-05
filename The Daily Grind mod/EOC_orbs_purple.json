@@ -2,7 +2,6 @@
 	{
 	  "type": "effect_on_condition",
 	  "id": "EOC_purple_orb",
-	  "condition":{"u_has_var":"green_orb_increment"},
 	  "effect":{
         "weighted_list_eocs": [
 			[ "EOC_purple_orb_mut_ROBUST", {"const":45} ],
