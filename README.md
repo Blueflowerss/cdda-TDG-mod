@@ -27,7 +27,8 @@ Working off the backrooms mod by TGWeaver, Monster descriptions and butcher mess
 			-can be randomly found where coffeemakers usually are
 	-a strange door
 		-you can find it while wandering the fields, it's extremely rare
-		-examine it to be teleported to a random chamber inside the Officium Mundi
+		-first usage teleports you to a random chamber in the offices
+		-next usages should teleport you to the last door you used to exit the dimension
 	-exit
 		-a metal door, use it to return to the door you used to enter the dimension.
 	-some changes to the backrooms
