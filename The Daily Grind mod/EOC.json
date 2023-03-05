@@ -44,11 +44,9 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_enterspot",
     "//": "Picks a office chamber.",
-	"condition":{"not":{"u_has_var":"offices_visited"}},
+	"condition":{"not":{"u_has_var":"offices_visited","type":"bool","context":"office","value":"true"}},
     "effect": [
-		{"u_message":"test"},
-	  {
-		
+	  {	
         "u_location_variable": { "global_val": "OM_enterspot" },
         "target_params": {
           "om_terrain": "backfloorchamber",
@@ -64,13 +62,13 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
-	"condition":{"not":{"u_has_var":"offices_visited"}},
-    "effect": [
+	"condition":{"u_has_var":"offices_visited","type":"bool","context":"office","value":"true"},
+    "false_effect": [
 	{"u_location_variable": { "global_val": "OM_returnspot" }},
 	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
 	{"u_message": "You step through the door, looking back you find the door missing."}
     ],
-	"false_effect":[
+	"effect":[
 	{"u_location_variable": { "global_val": "OM_returnspot" }},
 	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
 	{"u_message": "You step through the door."}
