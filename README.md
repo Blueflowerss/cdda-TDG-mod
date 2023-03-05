@@ -6,7 +6,7 @@ Working off the backrooms mod by TGWeaver, Monster descriptions and butcher mess
 -features as of now
 
 	-most of the stuff from the backrooms mod
-	-3 creatures
+	-4 creatures
 		-strider - a living stapler, a small jumping spider-like creature which uses hit-n-run tactics against the enemy, usually in packs
 		-shellaxy - An ambush computer with a deadly bite, roams the halls for now, in the future it will ambush the player in the cubicles
 		-tumblefeed - A slithering mass of cables with grappling attacks.
@@ -31,6 +31,11 @@ Working off the backrooms mod by TGWeaver, Monster descriptions and butcher mess
 		-next usages should teleport you to the last door you used to exit the dimension
 	-exit
 		-a metal door, use it to return to the door you used to enter the dimension.
+	-decision tree
+		-can rarely be found in the offices
+		-you can use it to exchange your yellow orbs for purple orbs.
+		-The exchange rate is "80 small yellow / 20 regular yellow = 1 purple"
+		-Open the suggestions :p
 	-some changes to the backrooms
 		-making it more walkable
 		-adding more furniture
