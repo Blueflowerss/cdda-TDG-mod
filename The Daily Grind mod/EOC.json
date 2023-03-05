@@ -74,7 +74,7 @@
 	{"u_location_variable": { "global_val": "OM_returnspot" }},
 	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
 	{"u_message": "You step through the door."}
-    ],
+    ]
 	]
   },
   {
