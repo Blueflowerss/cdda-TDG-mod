@@ -37,13 +37,10 @@
 			[ "EOC_purple_orb_mut_THICKSKIN", {"const":45} ],
 			[ "EOC_purple_orb_mut_PAINREC2", {"const":45} ],
 			[ "EOC_purple_orb_mut_RADIOGENIC", {"const":45} ],
+			[ "EOC_purple_orb_mut_LESS_GRAVITY", {"const":45} ],
 			[ "EOC_yellow_orb", {"const":200} ]
 		  ]
-	  },
-	  "false_effect":[
-		  {"u_add_var":"green_orb_increment","time":true},
-		  {"run_eocs":["EOC_green_orb"]}
-	  ]
+	  }
   },
 {"type": "effect_on_condition",
     "id": "EOC_purple_orb_mut_ROBUST",
@@ -339,6 +336,15 @@
         "effect":[
     {"u_message":"Shell Upgrade - Radiogenic"},
     {"u_add_trait":"RADIOGENIC"}
+        ],
+        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+		
+		{"type":"effect_on_condition",
+		"id": "EOC_purple_orb_mut_LESS_GRAVITY",
+        "condition":{"not":{"u_has_trait":"PURPLE_ORB_LESS_GRAVITY"}},
+        "effect":[
+    {"u_message":"Shell Upgrade - Lessened Gravity"},
+    {"u_add_trait":"PURPLE_ORB_LESS_GRAVITY"}
         ],
         "false_effect":[{"run_eocs":["EOC_purple_orb"]}]}
 ]

@@ -77,9 +77,10 @@
         },
 		{
 			"chunks": [
-			["null",100],
-			["mx_decision_tree",1]
-			],
+				["null",100],
+				["mx_office_strange",10],
+				["mx_decision_tree",1]
+				],
 			"x":0,
 			"y":0
 		}
