@@ -36,5 +36,43 @@
 	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
 					"X":["t_decision_tree"]}
     }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_decision_tree_forest",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "---Q---Q--  ----Q--Q---Q",
+        "-Xooo  ooX   ooo   ooooo",
+        "Q oo  ooo  ooooX o  oo  ",
+        "-oo X oo oX oo   oo   X ",
+        "-  ooX o  oo  ooXoooo oo",
+        "- o oo  X   oo oo   X   ",
+        "Q    o   oo  Xoo  ooo   ",
+        "- oXooooX   oooooX oo   ",
+        "-o oo     o     oo      ",
+        "- o o Xoo oXooo ooo oXoo",
+        "    ooo  oo   ooo    oo ",
+        "  oX    o ooo   oX    X ",
+        "- o  ooXo  o    oo  ooo ",
+        "-o   oooo   Xoo o oXo   ",
+        "Q  Xooo   oo oo         ",
+        "-X oooX o XoooX oooooX o",
+        "Q  o  oo  ooo   oX      ",
+        "- oooooo   ooo    oooo  ",
+        "- o  ooo  X  oXoo  oo   ",
+        "Q X  o    ooo   Xoooo  o",
+        "-oo ooXoooo    X     X  ",
+        "-          oooXo oooooo ",
+        "Q Xooo X   ooo oo Xooo  ",
+        "-  oooo  oo X oo     oo "
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "backrooms_palette" ],
+	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
+					"X":[["t_decision_tree",25],["t_null",75]]}
+    }
   }
 ]

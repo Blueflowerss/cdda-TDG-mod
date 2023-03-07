@@ -1,0 +1,75 @@
+[
+{
+    "type": "overmap_special",
+    "id": "mutable_decision_forest",
+    "subtype": "mutable",
+    "locations": [ "land" ],
+    "occurrences": [ 0, 2 ],
+    "check_for_locations": [
+      [ [ 0, 0, 0 ], [ "land" ] ],
+      [ [ 0, 1, 0 ], [ "land" ] ],
+      [ [ 1, 0, 0 ], [ "land" ] ],
+      [ [ 0, -1, 0 ], [ "land" ] ],
+      [ [ -1, 0, 0 ], [ "land" ] ]
+    ],
+    "joins": [ "backfloorchamber_north" ],
+    "overmaps": {
+      "forest_core": {
+        "overmap": "mutable_decision_forest_north",
+        "north": "backfloorchamber_north",
+        "east": "backfloorchamber_north",
+        "south": "backfloorchamber_north",
+        "west": "backfloorchamber_north"
+      }
+    },
+    "root": "forest_core",
+    "phases": [
+      [ { "overmap": "forest_core", "max": 1 } ],
+      [ { "overmap": "forest_core", "max": 2 } ],
+      [ { "overmap": "forest_core", "max": 5 } ]
+    ]
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mutable_decision_forest" ],
+    "weight": 500,
+    "object": {
+      "predecessor_mapgen": "field",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "backrooms_palette" ],
+      "place_nested": [
+        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "north": "forest" } },
+        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "east": "forest" } },
+        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "south": "forest" } },
+        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "west": "forest" } }
+      ]
+    }
+  }
+]
