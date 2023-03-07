@@ -30,4 +30,19 @@
 		"extra_effects": [ { "id": "hallu_touch_suicide", "hit_self": true } ],
 		"target_self":true,
 		"min_duration":-1
+ },
+{
+    "id": "office_server_mind_control",
+    "type": "SPELL",
+    "name": { "str": "psi-stack mindcontrol" },
+    "description": "Pulls the enemy closer.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT","NO_EXPLOSION_SFX" ],
+    "shape": "blast",
+	"min_damage":-1,
+	"max_damage":-1,
+    "effect": "directed_push",
+    "base_casting_time": 10,
+    "min_range": 30,
+    "max_range": 3
  }]

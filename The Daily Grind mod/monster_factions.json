@@ -72,4 +72,10 @@
       "dark_wyrm",
       "cop_zombie"
     ]
-  }]
+  },
+{
+    "type": "MONSTER_FACTION",
+	"base_faction":"office_monsters",
+    "name": "office_trap",
+	"friendly":["office_stapler"]
+  }]]

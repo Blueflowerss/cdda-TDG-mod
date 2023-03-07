@@ -1,4 +1,5 @@
-[{
+[
+{
 	"type":"MONSTER",
 	"id":"mon_office_anaconda",
 	"name":"camraconda",
@@ -161,6 +162,7 @@
   "flags": [
     "SEES",
 	"GOODHEARING",
+	"HEARS",
     "CLIMBS",
 	"GROUP_MORALE",
     "PATH_AVOID_DANGER_1"
@@ -230,6 +232,7 @@
     "BASHES",
     "COLDPROOF",
 	"SEES",
+	"HEARS",
 	"GOODHEARING",
 	"GRABS",
 	"NIGHT_INVISIBILITY",
@@ -431,4 +434,62 @@
     "PUSH_VEH",
     "RANGED_ATTACKER"
   ]
-}]
+},
+{
+  "id": "mon_office_server",
+  "type": "MONSTER",
+  "name": {
+    "str": "Psi-stack"
+  },
+  "description": "This server stack emanates a red glow from it's inside. It's contents are ever constantly rearranging themselves. It's glow compels you to come closer..",
+  "default_faction": "office_trap",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 20,
+  "volume": "62500 ml",
+  "weight": "172 kg",
+  "hp": 80,
+  "speed": 100,
+  "material": [
+    "steel"
+  ],
+  "symbol": "A",
+  "color": "blue",
+  "aggression": 50,
+  "morale": 100,
+  "anger_triggers": [
+    "PLAYER_CLOSE",
+    "HURT",
+    "FRIEND_ATTACKED",
+    "FRIEND_DIED"
+  ],
+  "armor_bash": 8,
+  "armor_cut": 16,
+  "armor_bullet": 4,
+  "vision_day": 20,
+  "harvest":"office_computer",
+  "vision_night": 20,
+  "special_attacks": [
+  {
+      "type": "spell",
+      "spell_data": {
+        "id": "office_server_mind_control",
+        "min_level": 1
+      },
+      "cooldown": 10,
+      "monster_message": "The machine shines bright red.."
+    }
+  ],
+  "death_drops": {},
+  "flags": [
+    "SEES",
+    "NOHEAD",
+    "ELECTRONIC",
+    "COLDPROOF",
+    "IMMOBILE",
+    "NO_BREATHE",
+    "STUN_IMMUNE"
+  ]
+}
+]
