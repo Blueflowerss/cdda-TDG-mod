@@ -1,16 +1,18 @@
 [
 	
 	{
-    "type": "COMESTIBLE",
+    "type": "GENERIC",
   "id": "office_yellow_orb",
   "looks_like": "baseball",
-
-    "comestible_type": "MED",
-    "consumption_effect_on_conditions": [ "EOC_yellow_orb" ],
   "symbol": "o",
   "color": "yellow",
   "name": {
     "str": "yellow orb"
+  },
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Yellow orb cracking",
+	"effect_on_conditions":["EOC_yellow_orb"]
   },
   "description": "A small neon-glowing yellow orb, you wonder what is it's purpose.",
   "price": 10000,
@@ -19,19 +21,18 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_9"
+	"LIGHT_9",
+	"SINGLE_USE"
   ],
   "weight": "500 g",
   "volume": "150 ml"
 },
-	{ "type": "COMESTIBLE",
+	{ "type": "GENERIC",
   "id": "office_yellow_orb_small",
 	"looks_like":"baseball",
   "name": {
     "str": "small yellow orb"
   },
-      "comestible_type": "MED",
-    "consumption_effect_on_conditions": [ "EOC_yellow_orb_small" ],
 	 "symbol": "o",
 	"description": "A small neon-glowing yellow orb, for an inexplicable reason you feel like inserting it into a nearby SD-card reader..",
 	"price": 1000,
@@ -41,16 +42,19 @@
 	 ],
 	  "weight": "50 g",
 	  "volume": "10 ml",
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Small yellow orb cracking",
+	"effect_on_conditions":["EOC_yellow_orb_small"]
+  },
 	"flags":[
-		"LIGHT_5"]
+		"LIGHT_5",
+		"SINGLE_USE"]
 	},
 {
-    "type": "COMESTIBLE",
+    "type": "GENERIC",
   "id": "office_blue_orb",
   "looks_like": "baseball",
-
-    "comestible_type": "MED",
-    "consumption_effect_on_conditions": [ "EOC_blue_orb" ],
   "symbol": "o",
   "color": "blue",
   "name": {
@@ -63,18 +67,21 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_9"
+	"LIGHT_9",
+	"SINGLE_USE"
   ],
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Blue orb cracking",
+	"effect_on_conditions":["EOC_blue_orb"]
+  },
   "weight": "500 g",
   "volume": "150 ml"
 },
 {
-    "type": "COMESTIBLE",
+    "type": "GENERIC",
   "id": "office_green_orb",
   "looks_like": "baseball",
-
-    "comestible_type": "MED",
-    "consumption_effect_on_conditions": [ "EOC_green_orb" ],
   "symbol": "o",
   "color": "green",
   "name": {
@@ -87,18 +94,21 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_9"
+	"LIGHT_9",
+	"SINGLE_USE"
   ],
   "weight": "500 g",
-  "volume": "150 ml"
+  "volume": "150 ml",
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Green orb cracking",
+	"effect_on_conditions":["EOC_green_orb"]
+  }
 },
 {
-    "type": "COMESTIBLE",
+    "type": "GENERIC",
   "id": "office_purple_orb",
   "looks_like": "baseball",
-
-    "comestible_type": "MED",
-    "consumption_effect_on_conditions": [ "EOC_purple_orb" ],
   "symbol": "o",
   "color": "pink",
   "name": {
@@ -111,8 +121,14 @@
     "glass"
   ],
   "flags": [
-	"LIGHT_20"
+	"LIGHT_20",
+	"SINGLE_USE"
   ],
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Purple orb cracking",
+	"effect_on_conditions":["EOC_purple_orb"]
+  },
   "weight": "500 g",
   "volume": "150 ml"
 }
