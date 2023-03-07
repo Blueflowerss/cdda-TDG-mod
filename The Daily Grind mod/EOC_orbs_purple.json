@@ -4,6 +4,17 @@
 	  "id": "EOC_purple_orb",
 	  "effect":{
         "weighted_list_eocs": [
+			[ "EOC_purple_orb_good", {"const":45}],
+			[ "EOC_purple_orb_remove", {"const":140}],
+			[ "EOC_yellow_orb", {"const":5} ]
+		  ]
+	  }
+  },
+{
+	  "type": "effect_on_condition",
+	  "id": "EOC_purple_orb_good",
+	  "effect":{
+        "weighted_list_eocs": [
 			[ "EOC_purple_orb_mut_ROBUST", {"const":45} ],
 			[ "EOC_purple_orb_mut_WEAKSCENT", {"const":45} ],
 			[ "EOC_purple_orb_mut_DEX_UP_2", {"const":45} ],
@@ -37,8 +48,67 @@
 			[ "EOC_purple_orb_mut_THICKSKIN", {"const":45} ],
 			[ "EOC_purple_orb_mut_PAINREC2", {"const":45} ],
 			[ "EOC_purple_orb_mut_RADIOGENIC", {"const":45} ],
-			[ "EOC_purple_orb_mut_LESS_GRAVITY", {"const":45} ],
-			[ "EOC_yellow_orb", {"const":200} ]
+			[ "EOC_purple_orb_mut_LESS_GRAVITY", {"const":45} ]
+		  ]
+	  }
+  },
+{
+	  "type": "effect_on_condition",
+	  "id": "EOC_purple_orb_remove",
+	  "effect":{
+        "weighted_list_eocs": [
+			[ "EOC_purple_orb_mut_remove_ROT1", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_ROT2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_ROT3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_WEAKSTOMACH", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_NAUSEA", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_VOMITOUS", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_CARNIVORE", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_ANTIJUNK", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_THIRST", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_THIRST2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_THIRST3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_TROGLO", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SMELLY", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SMELLY2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_UGLY", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_DEFORMED", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_DEFORMED2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_DEFORMED3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_ANIMALDISCORD", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_HUNGER", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_HUNGER2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_HUNGER3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_HEAVYSLEEPER", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_HEAVYSLEEPER2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_BADBACK", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_NOMAD", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_NOMAD2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_NOMAD3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_FORGETFUL", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_CHEMIMBALANCE", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_UNSTABLE", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_CHAOTIC", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SHOUT1", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SHOUT2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SHOUT3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_PONDEROUS1", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_PONDEROUS2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_PONDEROUS3", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_GLASSJAW", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_MOODSWINGS", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SLEEPY", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SLEEPY2", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_BADTEMPER", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_BADHEARING", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_DEAF", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SORES", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_SCHIZOPHRENIC", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_INSOMNIA", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_ADDICTIVE", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_JITTERY", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_LIGHTWEIGHT", {"const":450} ],
+			[ "EOC_purple_orb_mut_remove_NARCOLEPTIC", {"const":450} ]
 		  ]
 	  }
   },
@@ -345,6 +415,421 @@
         "effect":[
     {"u_message":"Shell Upgrade - Lessened Gravity"},
     {"u_add_trait":"PURPLE_ORB_LESS_GRAVITY"}
-        ],
-        "false_effect":[{"run_eocs":["EOC_purple_orb"]}]}
+        ]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ROT1",
+    "condition":{"u_has_trait":"ROT1"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Weakening "},
+    {"u_lose_trait":"ROT1"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ROT2",
+    "condition":{"u_has_trait":"ROT2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Deterioration "},
+    {"u_lose_trait":"ROT2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ROT3",
+    "condition":{"u_has_trait":"ROT3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Disintegration "},
+    {"u_lose_trait":"ROT3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_WEAKSTOMACH",
+    "condition":{"u_has_trait":"WEAKSTOMACH"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Weak Stomach "},
+    {"u_lose_trait":"WEAKSTOMACH"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_NAUSEA",
+    "condition":{"u_has_trait":"NAUSEA"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Nausea "},
+    {"u_lose_trait":"NAUSEA"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_VOMITOUS",
+    "condition":{"u_has_trait":"VOMITOUS"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Vomitous "},
+    {"u_lose_trait":"VOMITOUS"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_CARNIVORE",
+    "condition":{"u_has_trait":"CARNIVORE"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Carnivore "},
+    {"u_lose_trait":"CARNIVORE"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ANTIJUNK",
+    "condition":{"u_has_trait":"ANTIJUNK"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Junkfood Intolerance "},
+    {"u_lose_trait":"ANTIJUNK"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_THIRST",
+    "condition":{"u_has_trait":"THIRST"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal High Thirst "},
+    {"u_lose_trait":"THIRST"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_THIRST2",
+    "condition":{"u_has_trait":"THIRST2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Very Thirsty "},
+    {"u_lose_trait":"THIRST2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_THIRST3",
+    "condition":{"u_has_trait":"THIRST3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Extremely Thirsty "},
+    {"u_lose_trait":"THIRST3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_TROGLO",
+    "condition":{"u_has_trait":"TROGLO"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Light Sensitive "},
+    {"u_lose_trait":"TROGLO"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SMELLY",
+    "condition":{"u_has_trait":"SMELLY"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Strong Scent "},
+    {"u_lose_trait":"SMELLY"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SMELLY2",
+    "condition":{"u_has_trait":"SMELLY2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Smelly "},
+    {"u_lose_trait":"SMELLY2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_UGLY",
+    "condition":{"u_has_trait":"UGLY"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Ugly "},
+    {"u_lose_trait":"UGLY"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_DEFORMED",
+    "condition":{"u_has_trait":"DEFORMED"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Deformed "},
+    {"u_lose_trait":"DEFORMED"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_DEFORMED2",
+    "condition":{"u_has_trait":"DEFORMED2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Badly Deformed "},
+    {"u_lose_trait":"DEFORMED2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_DEFORMED3",
+    "condition":{"u_has_trait":"DEFORMED3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Grotesque "},
+    {"u_lose_trait":"DEFORMED3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ANIMALDISCORD",
+    "condition":{"u_has_trait":"ANIMALDISCORD"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Animal Discord "},
+    {"u_lose_trait":"ANIMALDISCORD"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_HUNGER",
+    "condition":{"u_has_trait":"HUNGER"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Fast Metabolism "},
+    {"u_lose_trait":"HUNGER"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_HUNGER2",
+    "condition":{"u_has_trait":"HUNGER2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Very Fast Metabolism "},
+    {"u_lose_trait":"HUNGER2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_HUNGER3",
+    "condition":{"u_has_trait":"HUNGER3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Extreme Metabolism "},
+    {"u_lose_trait":"HUNGER3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_HEAVYSLEEPER",
+    "condition":{"u_has_trait":"HEAVYSLEEPER"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Heavy Sleeper "},
+    {"u_lose_trait":"HEAVYSLEEPER"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_HEAVYSLEEPER2",
+    "condition":{"u_has_trait":"HEAVYSLEEPER2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Very Heavy Sleeper "},
+    {"u_lose_trait":"HEAVYSLEEPER2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_BADBACK",
+    "condition":{"u_has_trait":"BADBACK"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Bad Back "},
+    {"u_lose_trait":"BADBACK"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_NOMAD",
+    "condition":{"u_has_trait":"NOMAD"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Nomad "},
+    {"u_lose_trait":"NOMAD"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_NOMAD2",
+    "condition":{"u_has_trait":"NOMAD2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Antsy "},
+    {"u_lose_trait":"NOMAD2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_NOMAD3",
+    "condition":{"u_has_trait":"NOMAD3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Restless "},
+    {"u_lose_trait":"NOMAD3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_FORGETFUL",
+    "condition":{"u_has_trait":"FORGETFUL"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Forgetful "},
+    {"u_lose_trait":"FORGETFUL"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_CHEMIMBALANCE",
+    "condition":{"u_has_trait":"CHEMIMBALANCE"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Chemical Imbalance "},
+    {"u_lose_trait":"CHEMIMBALANCE"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_UNSTABLE",
+    "condition":{"u_has_trait":"UNSTABLE"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Genetically Unstable "},
+    {"u_lose_trait":"UNSTABLE"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_CHAOTIC",
+    "condition":{"u_has_trait":"CHAOTIC"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Genetic Chaos "},
+    {"u_lose_trait":"CHAOTIC"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SHOUT1",
+    "condition":{"u_has_trait":"SHOUT1"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Shouter "},
+    {"u_lose_trait":"SHOUT1"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SHOUT2",
+    "condition":{"u_has_trait":"SHOUT2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Screamer "},
+    {"u_lose_trait":"SHOUT2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SHOUT3",
+    "condition":{"u_has_trait":"SHOUT3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Howler "},
+    {"u_lose_trait":"SHOUT3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_PONDEROUS1",
+    "condition":{"u_has_trait":"PONDEROUS1"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Ponderous "},
+    {"u_lose_trait":"PONDEROUS1"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_PONDEROUS2",
+    "condition":{"u_has_trait":"PONDEROUS2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Very Ponderous "},
+    {"u_lose_trait":"PONDEROUS2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_PONDEROUS3",
+    "condition":{"u_has_trait":"PONDEROUS3"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Extremely Ponderous "},
+    {"u_lose_trait":"PONDEROUS3"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_GLASSJAW",
+    "condition":{"u_has_trait":"GLASSJAW"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Glass Jaw "},
+    {"u_lose_trait":"GLASSJAW"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_MOODSWINGS",
+    "condition":{"u_has_trait":"MOODSWINGS"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Mood Swings "},
+    {"u_lose_trait":"MOODSWINGS"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SLEEPY",
+    "condition":{"u_has_trait":"SLEEPY"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Sleepy "},
+    {"u_lose_trait":"SLEEPY"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SLEEPY2",
+    "condition":{"u_has_trait":"SLEEPY2"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Very Sleepy "},
+    {"u_lose_trait":"SLEEPY2"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_BADTEMPER",
+    "condition":{"u_has_trait":"BADTEMPER"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Bad Temper "},
+    {"u_lose_trait":"BADTEMPER"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_BADHEARING",
+    "condition":{"u_has_trait":"BADHEARING"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Poor Hearing "},
+    {"u_lose_trait":"BADHEARING"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_DEAF",
+    "condition":{"u_has_trait":"DEAF"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Deaf "},
+    {"u_lose_trait":"DEAF"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SORES",
+    "condition":{"u_has_trait":"SORES"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Sores "},
+    {"u_lose_trait":"SORES"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_SCHIZOPHRENIC",
+    "condition":{"u_has_trait":"SCHIZOPHRENIC"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Kaluptic Psychosis "},
+    {"u_lose_trait":"SCHIZOPHRENIC"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_INSOMNIA",
+    "condition":{"u_has_trait":"INSOMNIA"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Insomniac "},
+    {"u_lose_trait":"INSOMNIA"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_ADDICTIVE",
+    "condition":{"u_has_trait":"ADDICTIVE"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Addictive Personality "},
+    {"u_lose_trait":"ADDICTIVE"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_JITTERY",
+    "condition":{"u_has_trait":"JITTERY"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Jittery "},
+    {"u_lose_trait":"JITTERY"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_LIGHTWEIGHT",
+    "condition":{"u_has_trait":"LIGHTWEIGHT"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Lightweight "},
+    {"u_lose_trait":"LIGHTWEIGHT"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]},
+{"type":"effect_on_condition",
+    "id": "EOC_purple_orb_mut_remove_NARCOLEPTIC",
+    "condition":{"u_has_trait":"NARCOLEPTIC"},
+    "effect":[
+    {"u_message":"Shell Upgrade - Heal Narcoleptic "},
+    {"u_lose_trait":"NARCOLEPTIC"}
+    ],
+    "false_effect":[{"run_eocs":["EOC_purple_orb"]}]}
 ]
