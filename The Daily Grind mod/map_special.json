@@ -2,31 +2,47 @@
 {
     "type": "overmap_special",
     "id": "mutable_decision_forest",
+    "city_distance": [ 0, -1 ],
+    "city_size": [ 0, -1 ],
     "subtype": "mutable",
-    "locations": [ "land" ],
-    "occurrences": [ 0, 2 ],
+    "locations": [ "backfloorchamber", "subterranean_empty" ],
+    "occurrences": [ 10, 20 ],
     "check_for_locations": [
       [ [ 0, 0, 0 ], [ "land" ] ],
-      [ [ 0, 1, 0 ], [ "land" ] ],
-      [ [ 1, 0, 0 ], [ "land" ] ],
-      [ [ 0, -1, 0 ], [ "land" ] ],
-      [ [ -1, 0, 0 ], [ "land" ] ]
+      [ [ 0, 0, -1 ], [ "subterranean_empty" ] ],
+      [ [ 0, 0, -9 ], [ "backfloorchamber" ] ],
+      [ [ 0, 1, -9 ], [ "backfloorchamber" ] ],
+      [ [ 1, 0, -9 ], [ "backfloorchamber" ] ],
+      [ [ 0, -1, -9 ], [ "backfloorchamber" ] ],
+      [ [ -1, 0, -9 ], [ "backfloorchamber" ] ]
     ],
-    "joins": [ "backfloorchamber_north" ],
+    "joins": [ "forest", "surface_to_-1" ],
     "overmaps": {
-      "forest_core": {
+      "forest_root_surface": { "overmap": "field", "below": "surface_to_-1" },
+      "forest_root_-1": { "overmap": "solid_earth", "above": "surface_to_-1" },
+      "forest_core": { "overmap": "mutable_decision_forest_north", "north": "forest", "east": "forest", "south": "forest", "west": "forest" },
+      "forest_edge": {
         "overmap": "mutable_decision_forest_north",
-        "north": "backfloorchamber_north",
-        "east": "backfloorchamber_north",
-        "south": "backfloorchamber_north",
-        "west": "backfloorchamber_north"
+        "north": { "id": "forest", "type": "available" },
+        "east": { "id": "forest", "type": "available" },
+        "south": { "id": "forest", "type": "available" },
+        "west": { "id": "forest", "type": "available" }
       }
     },
-    "root": "forest_core",
+    "root": "forest_root_surface",
     "phases": [
-      [ { "overmap": "forest_core", "max": 1 } ],
-      [ { "overmap": "forest_core", "max": 2 } ],
-      [ { "overmap": "forest_core", "max": 5 } ]
+      [
+        {
+          "name": "-1_to_-9",
+          "chunk": [
+            { "overmap": "forest_root_-1", "pos": [ 0, 0, 0 ] },
+            { "overmap": "forest_core", "pos": [ 0, 0, -8 ] }
+          ],
+          "max": 1
+        }
+      ],
+      [ { "overmap": "forest_core", "max": 10 } ],
+      [ { "overmap": "forest_edge", "weight": 1 } ]
     ]
   },
 {

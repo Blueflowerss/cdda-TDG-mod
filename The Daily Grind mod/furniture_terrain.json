@@ -300,25 +300,53 @@
   {
     "type": "terrain",
     "id": "t_decision_wall",
+	"looks_like":"t_decision_wall",
     "name": "LED covered wall",
-    "description": "A rough dark wall. LED lights run around it's width.",
+    "description": "A rough stone wall. LED lights run around it's width.",
     "symbol": "#",
-	"looks_like":"t_concrete_wall",
-	"color":"light_gray",
-	"light_emitted": 5,
-	"copy-from":"t_wall_y",
-	"delete":{"flags":[ "FLAMMABLE" ]}
+	"color":"cyan",
+	"light_emitted": 15,
+	"copy-from":"t_drystone_wall"
+  },
+  {
+    "type": "terrain",
+    "id": "t_decision_floor",
+	"looks_like":"t_decision_floor",
+    "name": "metal floor",
+    "description": "A blue gleaming floor.",
+    "symbol": ".",
+	"color":"cyan",
+	"flags":["TRANSPARENT"],
+	"copy-from":"t_junk_floor"
+  },
+  {
+    "type": "terrain",
+    "id": "t_ink_sh",
+	"looks_like":"t_ink_sh",
+    "name": "shallow ink pool",
+    "description": "Some pen ink, you briefly wonder if it's safe to drink.",
+    "symbol": "~",
+	"color":"magenta",
+    "flags": [
+    "TRANSPARENT",
+    "LIQUID",
+    "NO_SCENT",
+    "SWIMMABLE",
+    "SALT_WATER",
+    "SHALLOW_WATER"
+  ],
+	"copy-from":"t_swater_sh"
   },
   {
     "type": "terrain",
     "id": "t_decision_tree",
     "name": "Decision Tree",
+	"looks_like":"t_tree_fungal",
     "description": "A LED ornamented tree, glowing with blue colors. Monitors of various sizes hang off the branches like leaves. You notice lizards with displays instead of heads travelling around the tree.",
 	"light_emitted": 25,
 	"symbol":"4",
 	"color":"blue",
 	"copy-from":"t_tree_pine_harvested",
-	"delete":{"flags":[ "FLAMMABLE_ASH" ]},
 	"examine_action": {
       "type": "effect_on_condition",
       "effect_on_conditions": ["EOC_decision_barter_query"]

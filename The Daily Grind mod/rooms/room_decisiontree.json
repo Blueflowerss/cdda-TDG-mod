@@ -33,8 +33,9 @@
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "palettes": [ "backrooms_palette" ],
-	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
-					"X":["t_decision_tree"]}
+	  "terrain": { "o": [["t_decision_floor",25],["t_decision_wall",75 ]],
+					"X":["t_decision_tree"],
+					" ":["t_decision_floor"]}
     }
   },
   {
@@ -44,35 +45,36 @@
     "object": {
       "mapgensize": [ 24, 24 ],
       "rows": [
-        "---Q---Q--  ----Q--Q---Q",
-        "-Xooo  ooX   ooo   ooooo",
-        "Q oo  ooo  ooooX o  oo  ",
-        "-oo X oo oX oo   oo   X ",
-        "-  ooX o  oo  ooXoooo oo",
-        "- o oo  X   oo oo   X   ",
-        "Q    o   oo  Xoo  ooo   ",
-        "- oXooooX   oooooX oo   ",
-        "-o oo     o     oo      ",
-        "- o o Xoo oXooo ooo oXoo",
-        "    ooo  oo   ooo    oo ",
+        " oooooo  oooooooo   oooo",
+        "oXooo  ooX   ooo   ooooo",
+        "o oo  ooo  ooooX o  oo  ",
+        " oo X oo oX oo   oo   X ",
+        "o  ooX o  oo  ooXoooo oo",
+        "o o oo  X   oo oo   X   ",
+        "     o   oo  Xoo  ooo   ",
+        "o oXooooX   oooooX oo   ",
+        " o oo     o     oo      ",
+        "o o o Xoo oXooo ooo oXoo",
+        "o   ooo  oo   ooo    oo ",
         "  oX    o ooo   oX    X ",
-        "- o  ooXo  o    oo  ooo ",
-        "-o   oooo   Xoo o oXo   ",
-        "Q  Xooo   oo oo         ",
-        "-X oooX o XoooX oooooX o",
-        "Q  o  oo  ooo   oX      ",
-        "- oooooo   ooo    oooo  ",
-        "- o  ooo  X  oXoo  oo   ",
-        "Q X  o    ooo   Xoooo  o",
-        "-oo ooXoooo    X     X  ",
-        "-          oooXo oooooo ",
-        "Q Xooo X   ooo oo Xooo  ",
-        "-  oooo  oo X oo     oo "
+        "o o  ooXo  o    oo  ooo ",
+        " o   oooo   Xoo o oXo   ",
+        "o  Xooo   oo oo         ",
+        " X oooX o XoooX oooooX o",
+        "   o  oo  ooo   oX      ",
+        "o oooooo   ooo    oooo  ",
+        " oo  ooo  X  oXoo  oo   ",
+        "  X  o    ooo   Xoooo  o",
+        "ooo ooXoooo    X     X  ",
+        "ooo        oooXo oooooo ",
+        "ooXooo X   ooo oo Xooo  ",
+        " oooooo  oo X oo     oo "
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "palettes": [ "backrooms_palette" ],
-	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
-					"X":[["t_decision_tree",25],["t_null",75]]}
+	  "terrain": { "o": [["t_decision_floor",25],["t_decision_wall",25 ],["t_ink_sh",50]],
+					"X":[["t_decision_tree",25],["t_decision_floor",50],["t_ink_sh",25]],
+					" ":[["t_decision_floor",50],["t_ink_sh",50]]}
     }
   }
 ]
