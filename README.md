@@ -2,6 +2,7 @@
 Attempt at integrating "The Daily Grind" novel with Cataclysm: Dark Days Ahead.
 
 Working off the backrooms mod by TGWeaver, Monster descriptions and butcher messages by NemoTheAxolotl.
+
 Lovam and Candlebury helped with generating mutable map specials, thank you!
  
 -features as of now
