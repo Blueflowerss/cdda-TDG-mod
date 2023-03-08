@@ -74,7 +74,7 @@
     "enchantments":[
 		{
 			"condition":"ALWAYS",
-			"values":[ {"value":"MOVE_COST","multiply":0.5}]
+			"values":[ {"value":"MOVE_COST","multiply":-0.5}]
 		}
 	]
   },
