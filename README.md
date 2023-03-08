@@ -38,6 +38,9 @@ Lovam and Candlebury helped with generating mutable map specials, thank you!
 		-you can use it to exchange your yellow orbs for purple orbs.
 		-The exchange rate is "80 small yellow / 20 regular yellow = 1 purple"
 		-Open the suggestions :p
+	-decision forests
+		-can be found while wandering the offices
+		-pools of pen ink cover the floors, only illuminations are the tree themselves and the LEDs on the walls.
 	-some changes to the backrooms
 		-making it more walkable
 		-adding more furniture
