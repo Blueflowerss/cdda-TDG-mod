@@ -21,12 +21,12 @@
       "forest_root_surface": { "overmap": "field", "below": "surface_to_-1" },
       "forest_root_-1": { "overmap": "solid_earth", "above": "surface_to_-1" },
       "forest_core": { "overmap": "mutable_decision_forest_north", "north": "forest", "east": "forest", "south": "forest", "west": "forest" },
-      "forest_edge": {
-        "overmap": "mutable_decision_forest_north",
-        "north": { "id": "forest", "type": "available" },
-        "east": { "id": "forest", "type": "available" },
-        "south": { "id": "forest", "type": "available" },
-        "west": { "id": "forest", "type": "available" }
+	  "forest_edge": {
+        "overmap": "mutable_decision_forest_edge_north",
+        "north": { "id": "forest","type":"available"},
+        "east": { "id": "forest","type":"available"},
+        "south": { "id": "forest","type":"available"},
+        "west": { "id": "forest","type":"available"}	
       }
     },
     "root": "forest_root_surface",
@@ -42,7 +42,9 @@
         }
       ],
       [ { "overmap": "forest_core", "max": 10 } ],
-      [ { "overmap": "forest_edge", "weight": 1 } ]
+	  [ {"overmap": "forest_edge", "weight":1}]
+	  
+
     ]
   },
 {
@@ -51,7 +53,6 @@
     "om_terrain": [ "mutable_decision_forest" ],
     "weight": 500,
     "object": {
-      "predecessor_mapgen": "field",
       "rows": [
         "                        ",
         "                        ",
@@ -81,11 +82,57 @@
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
       "palettes": [ "backrooms_palette" ],
       "place_nested": [
-        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "north": "forest" } },
-        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "east": "forest" } },
-        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "south": "forest" } },
-        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0, "neighbors": { "west": "forest" } }
+        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0}
       ]
+    }
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mutable_decision_forest_edge" ],
+    "weight": 500,
+    "object": {
+      "predecessor_mapgen": "backfloorchamber_north",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "backrooms_palette" ],
+      "place_nested": [
+	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0},
+	  { "chunks": [ "mx_decision_tree_forest_corner_NE" ], "x": 0, "y": 0, "joins": { "north": [ "forest" ],"east":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_corner_NW" ], "x": 0, "y": 0, "joins": { "north": [ "forest" ],"west":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_corner_SE" ], "x": 0, "y": 0, "joins": { "south": [ "forest" ],"east":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_corner_SW" ], "x": 0, "y": 0, "joins": { "south": [ "forest" ],"west":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"east":["forest"],"west":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "south": ["forest" ],"east":["forest"],"west":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"east":["forest"],"south":["forest"] } },
+	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"west":["forest"],"south":["forest"] } }
+
+	  ]
     }
   }
 ]

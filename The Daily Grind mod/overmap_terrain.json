@@ -78,7 +78,6 @@
 		{
 			"chunks": [
 				["null",100],
-				["mx_decision_tree_forest",1],
 				["mx_office_strange",10],
 				["mx_decision_tree",1]
 				],

@@ -1,7 +1,7 @@
 [
   {
     "type": "overmap_terrain",
-    "id": [ "mutable_decision_forest" ],
+    "id": [ "mutable_decision_forest","mutable_decision_forest_edge" ],
     "name": "decision forest",
     "sym": "#",
     "color": "c_cyan",
