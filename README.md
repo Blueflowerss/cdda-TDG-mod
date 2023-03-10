@@ -40,7 +40,11 @@ Lovam and Candlebury helped with generating mutable map specials, thank you!
 		-Open the suggestions :p
 	-decision forests
 		-can be found while wandering the offices
-		-pools of pen ink cover the floors, only illuminations are the tree themselves and the LEDs on the walls.
+		-pools of pen ink cover the floors, only illumination are the trees themselves and the LEDs on the walls.
+	-Ink sea
+		-can be found while wandering the offices
+		-a sea of ink, will eventually contain fish
+		-plastic beach, which one will be able to dig up for materials
 	-some changes to the backrooms
 		-making it more walkable
 		-adding more furniture
