@@ -1,0 +1,115 @@
+[{"type": "effect_type",
+    "id": "camraconda_stare_effect",
+    "name": [
+        "Frozen"
+    ],
+	"desc":["You're completely frozen in space."],
+    "max_intensity": 1,
+    "apply_message": "You can't move.",
+    "int_dur_factor": 1,
+    "miss_messages": [["You can't move.", 1]],
+	"max_duration": "1 s",
+    "base_mods": {
+		"sleep_amount":[10],
+		"sleep_chance":[10000],
+		"speed_mod": [ -1000 ],
+		"dex_mod": [ -100 ],
+		"sleep_chance_bot":[10000]
+	}
+
+},
+{
+    "type": "effect_type",
+    "id": "green_orb_area_sleep_quality",
+    "name": [ "Slowed Tiredness" ],
+    "desc": [ "You feel noticeably less tired while in this area." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "10 s",
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"mutations":["GREEN_ORB_LESS_SLEEP"]
+		}
+	]
+  },
+{
+    "type": "effect_type",
+    "id": "green_orb_area_focus",
+    "name": [ "Enhanced Focus" ],
+    "desc": [ "You find it easier to focus on tasks while in this area." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "10 s",
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"values":[ {"value":"LEARNING_FOCUS","add":50},{"value":"INTELLIGENCE","add":4},{"value":"READING_EXP","multiply":1.5}]
+		}
+	]
+  },
+{
+    "type": "effect_type",
+    "id": "green_orb_area_noise",
+    "name": [ "Reduced noise" ],
+    "desc": [ "This place seems unusually quiet." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "10 s",
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"values":[ {"value":"FOOTSTEP_NOISE","multiply":0},{"value":"SHOUT_NOISE","multiply":0}]
+		}
+	]
+  },
+{
+    "type": "effect_type",
+    "id": "green_orb_area_move",
+    "name": [ "Easier Navigation" ],
+    "desc": [ "Moving through this area is unnaturally easy." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "10 s",
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"values":[ {"value":"MOVE_COST","multiply":-0.5}]
+		}
+	]
+  },
+{
+    "type": "effect_type",
+    "id": "green_orb_area_regen",
+    "name": [ "Healthier" ],
+    "desc": [ "You feel healthier.. you're not exactly sure in what way." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "10 s",
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"mutations":["GREEN_ORB_REGENERATION"]
+		}
+	]
+  },
+{
+    "type": "effect_type",
+    "id": "eff_xeno_coffee",
+    "name": [ "Xeno coffee" ],
+    "desc": [ "The world feels slower, your reflexes are at their prime." ],
+    "max_intensity": 5,
+	"apply_message": "Your brain goes on overdrive.",
+    "int_dur_factor": 1000,
+    "max_duration": "40 m",
+	"base_mods":[{"dex_mod":6}],
+    "enchantments":[
+		{
+			"condition":"ALWAYS",
+			"values":[{"value":"SPEED","add":50},
+					{"value":"BONUS_DODGE","add":10},
+					{"value":"BONUS_DAMAGE","add":15}
+					]
+		}
+	]
+  }]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "GROUP_OFFICES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 3, 5 ], "weight": 400 },
+	  {"group": "GROUP_OFFICES_STRIDER_ATTACK","pack_size":[1,2], "weight": 40},
+	  { "monster": "mon_office_shellaxy", "weight": 350 },
+      { "monster": "mon_office_tumblefeed", "weight": 30 },
+	  { "monster": "mon_office_human", "weight": 5 }
+    ]
+  },
+  {
+    "name": "GROUP_OFFICES_RESPAWN",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 2, 3 ], "weight": 400 },
+	  { "monster": "mon_office_shellaxy", "weight": 350 }
+    ]
+  },
+  {
+    "name": "GROUP_OFFICES_STRIDER_ATTACK",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 4, 8 ], "weight": 400 }
+    ]
+  }
+]

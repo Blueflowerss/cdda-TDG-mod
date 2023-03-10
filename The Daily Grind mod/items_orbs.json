@@ -1,0 +1,135 @@
+[
+	
+	{
+    "type": "GENERIC",
+  "id": "office_yellow_orb",
+  "looks_like": "baseball",
+  "symbol": "o",
+  "color": "yellow",
+  "name": {
+    "str": "yellow orb"
+  },
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Yellow orb cracking",
+	"effect_on_conditions":["EOC_yellow_orb"]
+  },
+  "description": "A small neon-glowing yellow orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_9",
+	"SINGLE_USE"
+  ],
+  "weight": "500 g",
+  "volume": "150 ml"
+},
+	{ "type": "GENERIC",
+  "id": "office_yellow_orb_small",
+	"looks_like":"baseball",
+  "name": {
+    "str": "small yellow orb"
+  },
+	 "symbol": "o",
+	"description": "A small neon-glowing yellow orb, for an inexplicable reason you feel like inserting it into a nearby SD-card reader..",
+	"price": 1000,
+	"price_postapoc": 100,
+	"material": [
+		"glass"
+	 ],
+	  "weight": "50 g",
+	  "volume": "10 ml",
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Small yellow orb cracking",
+	"effect_on_conditions":["EOC_yellow_orb_small"]
+  },
+	"flags":[
+		"LIGHT_5",
+		"SINGLE_USE"]
+	},
+{
+    "type": "GENERIC",
+  "id": "office_blue_orb",
+  "looks_like": "baseball",
+  "symbol": "o",
+  "color": "blue",
+  "name": {
+    "str": "blue orb"
+  },
+  "description": "A sky blue orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_9",
+	"SINGLE_USE"
+  ],
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Blue orb cracking",
+	"effect_on_conditions":["EOC_blue_orb"]
+  },
+  "weight": "500 g",
+  "volume": "150 ml"
+},
+{
+    "type": "GENERIC",
+  "id": "office_green_orb",
+  "looks_like": "baseball",
+  "symbol": "o",
+  "color": "green",
+  "name": {
+    "str": "green orb"
+  },
+  "description": "A neon green orb, you wonder what is it's purpose.",
+  "price": 10000,
+  "price_postapoc": 1000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_9",
+	"SINGLE_USE"
+  ],
+  "weight": "500 g",
+  "volume": "150 ml",
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Green orb cracking",
+	"effect_on_conditions":["EOC_green_orb"]
+  }
+},
+{
+    "type": "GENERIC",
+  "id": "office_purple_orb",
+  "looks_like": "baseball",
+  "symbol": "o",
+  "color": "pink",
+  "name": {
+    "str": "purple orb"
+  },
+  "description": "A neon purple orb, you wonder what is it's purpose.",
+  "price": 100000,
+  "price_postapoc": 10000,
+  "material": [
+    "glass"
+  ],
+  "flags": [
+	"LIGHT_20",
+	"SINGLE_USE"
+  ],
+  "use_action":{
+	"type":"effect_on_conditions",
+	"description":"Purple orb cracking",
+	"effect_on_conditions":["EOC_purple_orb"]
+  },
+  "weight": "500 g",
+  "volume": "150 ml"
+}
+]
