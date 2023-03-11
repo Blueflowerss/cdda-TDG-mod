@@ -1,0 +1,45 @@
+[
+  {
+    "name": "GROUP_OFFICES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 3, 5 ], "weight": 400 },
+	  {"group": "GROUP_OFFICES_STRIDER_ATTACK","pack_size":[6,10], "weight": 40},
+	  { "monster": "mon_office_shellaxy", "weight": 350 },
+      { "monster": "mon_office_tumblefeed", "weight": 30 },
+	  { "monster": "mon_office_human", "weight": 5 }
+    ]
+  },
+  {
+    "name": "GROUP_OFFICES_RESPAWN",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 2, 3 ], "weight": 400 },
+	  { "monster": "mon_office_shellaxy", "weight": 350 }
+    ]
+  },
+  {
+    "name": "GROUP_OFFICES_STRIDER_ATTACK",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 1, 2 ], "weight": 400 },
+		{"monster":"mon_office_server","pack_size":[1,1],"weight":80}
+    ]
+  },
+{
+    "name": "GROUP_OFFICES_STRIDER_ATTACK",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_office_strider", "pack_size": [ 1, 2 ], "weight": 400 },
+		{"monster":"mon_office_server","pack_size":[1,1],"weight":80}
+    ]
+  },
+{
+    "name": "GROUP_INK_SEA",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "ink_sea_crammie", "pack_size": [ 1, 1 ], "weight": 80 },
+		{"monster":"ink_sea_criniode","pack_size":[1,3],"weight":80}
+    ]
+  }
+]

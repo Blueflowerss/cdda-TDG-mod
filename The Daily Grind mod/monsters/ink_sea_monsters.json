@@ -1,0 +1,92 @@
+[
+	{
+		"id":"ink_sea_criniode",
+		"type":"MONSTER",
+		"copy-from":"mon_fish_rainbow_trout",
+		"default_faction":"office_monsters",
+		"name":{
+			"str":"criniode","str_pl":"criniodes"
+		},
+		"description":"Its bright glow makes it difficult to discern at first, but the light it emits does make it easy to spot the numerous tentacles dangling beneath it in the thick inky waves. Its entire body seems to be shaped like an LED scaled up to the size of a small car, and with the sparks the tentacles occasionally admit, its likely that any shocks from them could be lethal.",
+		"weight": "800 kg",
+		"volume": "600 L",
+		"hp": 10,
+		"speed": 60,
+		"material": [
+			"plastic","steel"
+		],
+		"aggression": 5,
+		"morale":20,
+		"luminance": 15,
+		"anger_triggers": [
+			"HURT"
+		],
+	    "armor_bash": 8,
+	    "armor_cut": 16,
+	    "armor_bullet": 4,
+	    "armor_elec": 50,
+		"vision_night": 7,
+		"vision_day": 14,
+		"special_when_hit": [
+			"ZAPBACK",
+			100
+		],
+	  "melee_damage": [
+		{
+			"damage_type": "electric",
+			"amount": 16
+		}
+		
+  ],
+  "delete":{"flags":["FISHABLE"]}
+	},
+	{
+		"id":"ink_sea_crammie",
+		"type":"MONSTER",
+		"copy-from":"mon_fish_grass_carp",
+		"default_faction":"office_monsters",
+		"speed": 60,
+		"name":{
+			"str":"crammie","str_pl":"crammies"
+		},
+		"description":"A strange creature that seems to resemble a fish, but only in the vaguest sense of shape. Occasionally its mouth opens up in short intervals, releasing a swarm of living sticks of RAM, which flit about in the inky depths before rushing back into the protection of their fish-shaped vessel.",
+		"material": [
+			"plastic","steel"
+		],
+		  "fear_triggers": [
+			"HURT"
+		],
+		"anger_triggers":[
+			"HOSTILE_SEEN"
+		],
+		"aggression": 9,
+		"morale": 5,
+		"special_attacks":[
+			{
+			  "type": "spell",
+			  "spell_data": {
+				"id": "crammie_summon"
+			  },
+			  "cooldown": 20,
+			  "monster_message": "Rammies spill out of the Crammie!"
+			}
+		]
+	},
+{
+		"id":"ink_sea_rammie",
+		"type":"MONSTER",
+		"speed": 50,
+		"copy-from":"mon_sewer_fish",
+		"default_faction":"office_monsters",
+		"delete":{"flags":["AQUATIC"]},
+		"name":{
+			"str":"rammie","str_pl":"rammies"
+		},
+		"description":"Stick of ram with teeth and short stick legs.",
+		"material": [
+			"plastic","steel"
+		],
+		"aggression": 60,
+		"morale": 50
+	}
+]

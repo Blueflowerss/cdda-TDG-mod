@@ -1,0 +1,134 @@
+[
+{
+    "type": "overmap_special",
+    "id": "mutable_ink_sea",
+    "city_distance": [ 0, -1 ],
+    "city_size": [ 0, -1 ],
+    "subtype": "mutable",
+    "locations": [ "backfloorchamber", "subterranean_empty" ],
+    "occurrences": [ 10, 20 ],
+    "check_for_locations": [
+      [ [ 0, 0, 0 ], [ "land" ] ],
+      [ [ 0, 0, -1 ], [ "subterranean_empty" ] ],
+      [ [ 0, 0, -9 ], [ "backfloorchamber" ] ],
+      [ [ 0, 1, -9 ], [ "backfloorchamber" ] ],
+      [ [ 1, 0, -9 ], [ "backfloorchamber" ] ],
+      [ [ 0, -1, -9 ], [ "backfloorchamber" ] ],
+      [ [ -1, 0, -9 ], [ "backfloorchamber" ] ]
+    ],
+    "joins": [ "sea", "surface_to_-1","plastic" ],
+    "overmaps": {
+      "sea_root_surface": { "overmap": "field", "below": "surface_to_-1" },
+      "sea_root_-1": { "overmap": "solid_earth", "above": "surface_to_-1" },
+      "sea_core": { "overmap": "mutable_ink_sea_north", "north": "sea", "east": "sea", "south": "sea", "west": "sea" },
+	  "sea_edge": {
+        "overmap": "mutable_plastic_beach_north",
+        "north": { "id": "sea","type":"available","alternatives":["plastic"]},
+        "east": { "id": "sea","type":"available" ,"alternatives":["plastic"]},
+        "south": { "id": "sea","type":"available","alternatives":["plastic"]},
+        "west": { "id": "sea","type":"available" ,"alternatives":["plastic"]}	
+      }
+    },
+    "root": "sea_root_surface",
+    "phases": [
+      [
+        {
+          "name": "-1_to_-9",
+          "chunk": [
+            { "overmap": "sea_root_-1", "pos": [ 0, 0, 0 ] },
+            { "overmap": "sea_core", "pos": [ 0, 0, -8 ] }
+          ],
+          "max": 1
+        }
+      ],
+      [ { "overmap": "sea_core", "max": 100 } ],
+	  [ {"overmap": "sea_edge", "weight":1}]
+
+	  
+
+    ]
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mutable_ink_sea" ],
+    "weight": 500,
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "backrooms_palette" ],
+      "place_nested": [
+        { "chunks": [ "mx_ink_sea" ], "x": 0, "y": 0}
+      ]
+    }
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mutable_plastic_beach" ],
+    "weight": 500,
+    "object": {
+      "predecessor_mapgen": "backfloorchamber_north",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "backrooms_palette" ],
+      "place_nested": [
+	  { "chunks": [ "mx_plastic_beach" ], "x": 0, "y": 0},
+	{ "chunks": [ "mx_ink_sea_corner_N" ], "x": 0, "y": 0, "neighbors": { "north": ["mutable_ink_sea" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_W" ], "x": 0, "y": 0, "neighbors": { "west":  ["mutable_ink_sea" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_E" ], "x": 0, "y": 0, "neighbors": { "east":  ["mutable_ink_sea" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_S" ], "x": 0, "y": 0, "neighbors": { "south": ["mutable_ink_sea" ]}}
+	  ]
+    }
+  }
+]
