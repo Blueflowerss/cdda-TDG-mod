@@ -306,4 +306,18 @@
 	"category": "<office_human_harvest>",
 	"text": [
 "."]
+},
+{
+	"type":"snippet",
+	"category":"<ink_sea_criniode>",
+	"text":[
+	"Despite the look of it, the large translucent “bulb” of the creature is actually much softer than it would appear once you get past the outer layer. Numerous darkened scraps of metal and plastic are clumped together in the center of the gooey see-through inner flesh, seemingly made of pieces of other creatures you've seen around the offices. The only other notable thing you can find is an organ that looks like a strange semi-organic tesla coil, completely dysfunctional now that the creature is dead."
+	]
+},
+{
+	"type":"snippet",
+	"category":"<ink_sea_crammie>",
+	"text":[
+	"Butchering this corpse involves more cracking than cutting, most of its body composed of a tough carapace that is nothing like any fish you've seen, and even as you work, several RAMmies scuttle out of the various openings you make. By the time you finally open up the main body completely, only the most lethargic of them are still inside, and you can even spot some pale underdeveloped RAMmies connected to the shell by still, lifeless umbilicals."
+	]
 }]

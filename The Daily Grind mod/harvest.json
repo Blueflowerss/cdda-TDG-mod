@@ -59,5 +59,31 @@
 	{ "drop": "cable", "type": "bone", "mass_ratio": 0.05 },
 	{ "drop": "scrap", "type": "bone", "mass_ratio": 0.1 }
     ]
+  },
+   {
+    "id": "ink_sea_criniode",
+    "type": "harvest",
+    "message": "<ink_sea_criniode>",
+    "entries": [
+	{ "drop": "cable", "type": "bone", "mass_ratio": 0.05 },
+	{ "drop": "red_pen_ink", "type": "blood", "mass_ratio": 0.05 },
+	{ "drop": "scrap", "type": "bone", "mass_ratio": 0.1 },
+	{ "drop": "plastic_chunk", "mass_ratio":0.05, "type": "skin" },
+	{ "drop": "amplifier", "base_num": [ 20, 50 ], "type": "offal" },
+	{"drop": "mutant_meat", "type": "flesh", "mass_ratio":0.12}
+    ]
+  },
+  {
+	"id": "ink_sea_crammie",
+    "type": "harvest",
+    "message": "<ink_sea_crammie>",
+    "entries": [
+	{ "drop": "cable", "type": "bone", "mass_ratio": 0.05 },
+	{ "drop": "red_pen_ink", "type": "blood", "mass_ratio": 0.05 },
+	{ "drop": "scrap", "type": "bone", "mass_ratio": 0.1 },
+	{ "drop": "plastic_chunk", "mass_ratio":0.05, "type": "skin" },
+	{"drop": "mutant_meat", "type": "flesh", "mass_ratio":0.12},
+	{"drop": "RAM", "type": "offal", "mass_ratio":0.51}
+    ] 
   }
   ]

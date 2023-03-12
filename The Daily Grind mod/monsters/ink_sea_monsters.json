@@ -10,12 +10,12 @@
 		"description":"Its bright glow makes it difficult to discern at first, but the light it emits does make it easy to spot the numerous tentacles dangling beneath it in the thick inky waves. Its entire body seems to be shaped like an LED scaled up to the size of a small car, and with the sparks the tentacles occasionally admit, its likely that any shocks from them could be lethal.",
 		"weight": "800 kg",
 		"volume": "600 L",
-		"hp": 10,
+		"hp": 320,
 		"speed": 60,
 		"material": [
 			"plastic","steel"
 		],
-		"aggression": 5,
+		"aggression": 8,
 		"morale":20,
 		"luminance": 15,
 		"anger_triggers": [
@@ -24,9 +24,14 @@
 	    "armor_bash": 8,
 	    "armor_cut": 16,
 	    "armor_bullet": 4,
+		"harvest":"ink_sea_criniode",
 	    "armor_elec": 50,
 		"vision_night": 7,
 		"vision_day": 14,
+		"death_drops": {
+			"subtype":"distribution",
+			"items":["office_green_orb"]
+		},
 		"special_when_hit": [
 			"ZAPBACK",
 			100
@@ -61,6 +66,15 @@
 		],
 		"aggression": 9,
 		"morale": 5,
+		  "death_drops": {
+			"items": [
+			  [
+				"office_yellow_orb_small",
+				1
+			  ]
+			]
+		  },
+		"harvest":"ink_sea_crammie",
 		"special_attacks":[
 			{
 			  "type": "spell",
@@ -86,6 +100,10 @@
 		"material": [
 			"plastic","steel"
 		],
+	    "death_function": {
+			"corpse_type": "NO_CORPSE",
+			"message": "the rammie falls apart into mush."
+		},
 		"aggression": 60,
 		"morale": 50
 	}

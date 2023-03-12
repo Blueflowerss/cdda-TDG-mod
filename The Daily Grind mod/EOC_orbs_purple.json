@@ -5,8 +5,7 @@
 	  "effect":{
         "weighted_list_eocs": [
 			[ "EOC_purple_orb_good", {"const":45}],
-			[ "EOC_purple_orb_remove", {"const":140}],
-			[ "EOC_yellow_orb", {"const":5} ]
+			[ "EOC_purple_orb_remove", {"const":140}]
 		  ]
 	  }
   },

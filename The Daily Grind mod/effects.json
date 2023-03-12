@@ -112,4 +112,13 @@
 					]
 		}
 	]
+  },
+  {
+    "type": "effect_type",
+    "id": "ink_blot",
+    "name": [ "inked" ],
+    "desc": [ "Range of Sight: 1; You are covered in ink!" ],
+    "apply_message": "You're covered in ink!",
+    "rating": "bad",
+    "base_mods": { "per_mod": [ -3 ]}
   }]

@@ -188,6 +188,9 @@
     "terrain": {
       "-": "t_ink_deep",
 	  "w": "t_ink_sh"
-    }
+    },
+	"fields":{
+		"-":[{"field":"fd_ink_deep"}]
+	}
   }
 ]
