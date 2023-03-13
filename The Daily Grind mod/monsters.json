@@ -444,7 +444,7 @@
     "str": "Psi-stack"
   },
   "description": "This server stack emanates a red glow from it's inside. It's contents are ever constantly rearranging themselves. It's glow compels you to move away..",
-  "default_faction": "office_trap",
+  "default_faction": "office_stapler",
   "species": [
     "ROBOT"
   ],

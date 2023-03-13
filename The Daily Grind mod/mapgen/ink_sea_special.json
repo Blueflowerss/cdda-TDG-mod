@@ -6,7 +6,7 @@
     "city_size": [ 0, -1 ],
     "subtype": "mutable",
     "locations": [ "backfloorchamber", "subterranean_empty" ],
-    "occurrences": [ 10, 20 ],
+    "occurrences": [ 3,5 ],
     "check_for_locations": [
       [ [ 0, 0, 0 ], [ "land" ] ],
       [ [ 0, 0, -1 ], [ "subterranean_empty" ] ],
@@ -16,17 +16,23 @@
       [ [ 0, -1, -9 ], [ "backfloorchamber" ] ],
       [ [ -1, 0, -9 ], [ "backfloorchamber" ] ]
     ],
-    "joins": [ "sea", "surface_to_-1","plastic" ],
+    "joins": [ "sea", "surface_to_-1","plastic","river"],
     "overmaps": {
       "sea_root_surface": { "overmap": "field", "below": "surface_to_-1" },
       "sea_root_-1": { "overmap": "solid_earth", "above": "surface_to_-1" },
       "sea_core": { "overmap": "mutable_ink_sea_north", "north": "sea", "east": "sea", "south": "sea", "west": "sea" },
+	  "sea_river_begin":{"overmap":"mutable_ink_river_north","north":"sea","south":"river"},
+	  "sea_river":{"overmap":"mutable_ink_river_north","north":"river","south":"river"},
+	  "sea_river_corner":{"overmap":"mutable_ink_river_north","north":"river","east":"river"},
+	  "sea_river_threeway":{"overmap":"mutable_ink_river_north","north":"river","east":"river","west":"river"},
+	  "sea_river_crossroads":{"overmap":"mutable_ink_river_north","north":"river","east":"river","west":"river","south":"river"},
+	  "sea_river_end":{"overmap":"mutable_ink_river_north","north":"river"},
 	  "sea_edge": {
         "overmap": "mutable_plastic_beach_north",
-        "north": { "id": "sea","type":"available","alternatives":["plastic"]},
-        "east": { "id": "sea","type":"available" ,"alternatives":["plastic"]},
-        "south": { "id": "sea","type":"available","alternatives":["plastic"]},
-        "west": { "id": "sea","type":"available" ,"alternatives":["plastic"]}	
+        "north": { "id": "sea","type":"available","alternatives":["plastic","river"]},
+        "east": { "id": "sea","type":"available" ,"alternatives":["plastic","river"]},
+        "south": { "id": "sea","type":"available","alternatives":["plastic","river"]},
+        "west": { "id": "sea","type":"available" ,"alternatives":["plastic","river"]}	
       }
     },
     "root": "sea_root_surface",
@@ -42,6 +48,14 @@
         }
       ],
       [ { "overmap": "sea_core", "max": 100 } ],
+	  [{"overmap":"sea_river_begin","max":5}],
+        [
+            { "overmap": "sea_river", "weight":100},
+			{ "overmap": "sea_river_threeway","weight":10},
+            { "overmap": "sea_river_corner", "weight":20},
+			{ "overmap": "sea_river_crossroads", "weight":1},
+			{ "overmap": "sea_river_end","weight":5}
+		],
 	  [ {"overmap": "sea_edge", "weight":1}]
 
 	  
@@ -124,11 +138,55 @@
       "palettes": [ "backrooms_palette" ],
       "place_nested": [
 	  { "chunks": [ "mx_plastic_beach" ], "x": 0, "y": 0},
-	{ "chunks": [ "mx_ink_sea_corner_N" ], "x": 0, "y": 0, "neighbors": { "north": ["mutable_ink_sea" ]}},
-	{ "chunks": [ "mx_ink_sea_corner_W" ], "x": 0, "y": 0, "neighbors": { "west":  ["mutable_ink_sea" ]}},
-	{ "chunks": [ "mx_ink_sea_corner_E" ], "x": 0, "y": 0, "neighbors": { "east":  ["mutable_ink_sea" ]}},
-	{ "chunks": [ "mx_ink_sea_corner_S" ], "x": 0, "y": 0, "neighbors": { "south": ["mutable_ink_sea" ]}}
+	{ "chunks": [ "mx_ink_sea_corner_N" ], "x": 0, "y": 0, "neighbors": { "north": ["mutable_ink_sea","backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_W" ], "x": 0, "y": 0, "neighbors": { "west":  ["mutable_ink_sea","backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_E" ], "x": 0, "y": 0, "neighbors": { "east":  ["mutable_ink_sea","backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_sea_corner_S" ], "x": 0, "y": 0, "neighbors": { "south": ["mutable_ink_sea","backfloorchamber" ]}}
 	  ]
     }
-  }
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mutable_ink_river" ],
+    "weight": 500,
+    "object": {
+      "predecessor_mapgen": "backfloorchamber_north",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "backrooms_palette" ],
+      "place_nested": [
+	  { "chunks": [ "mx_ink_river" ], "x": 0, "y": 0},
+	{ "chunks": [ "mx_ink_river_N" ], "x": 0, "y": 0, "neighbors": { "north": ["backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_river_W" ], "x": 0, "y": 0, "neighbors": { "west":  ["backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_river_E" ], "x": 0, "y": 0, "neighbors": { "east":  ["backfloorchamber" ]}},
+	{ "chunks": [ "mx_ink_river_S" ], "x": 0, "y": 0, "neighbors": { "south": ["backfloorchamber" ]}}
+	  ]
+    }
+}
 ]
