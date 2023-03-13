@@ -27,5 +27,14 @@
     "color": "c_yellow",
     "mondensity": 1,
     "see_cost": 1
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "mutable_ink_river" ],
+    "name": "ink river",
+    "sym": "~",
+    "color": "c_magenta",
+    "mondensity": 1,
+    "see_cost": 1
   }
 ]

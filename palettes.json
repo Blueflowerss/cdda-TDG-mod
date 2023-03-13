@@ -192,5 +192,13 @@
 	"fields":{
 		"-":[{"field":"fd_ink_deep"}]
 	}
+  },
+{
+    "type": "palette",
+    "id": "ink_river_palette",
+    "terrain": {
+      "-": "t_plastic_sand",
+	  "w": "t_ink_sh"
+    }
   }
 ]
