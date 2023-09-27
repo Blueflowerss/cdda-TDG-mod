@@ -1,4 +1,5 @@
 # cdda-TDG-mod
+
 Attempt at integrating "The Daily Grind" novel with Cataclysm: Dark Days Ahead.
 
 Working off the backrooms mod by TGWeaver, Monster descriptions and butcher messages by NemoTheAxolotl.
@@ -50,49 +51,13 @@ Lovam and Candlebury helped with generating mutable map specials, thank you!
 		-adding more furniture
 		-making the rooms' placement less random
 		-monsters respawn if you kill too many in a given area
-A rough roadmap (which i stopped updating)
+planed features so i don't forget:
+	-long straight roads, made using mutables, cutting through the offices to facilitate fast travel.
+ 	-spatial and temporal looping trap
+  		-spatial
+    			-kinda like what happens during portal storms sometimes, with you having deja vu
+       		-temporal
+	 		-very rare event that timeskips you several hours to days forward in time.
 
-	-add various critures 
-		-camraconda DONE'ish
-			-creature
-			-spell which temporarily stops the player
-		-stapler DONE 
-			-jumping little creatures
-			-found in offices
-		-living computer 
-			-crocodile bite DONE
-			-ambush creature - spawns from a trap
-			-really short line of sight DONE
-
-		-other creatures from the novel
-	-make a faction for the office creatures DONE
-
-	-adding the officium mundi world layer to the normal world DONE
-
-		-inserting the layer into -9z
-		-making sure everything works nicely ;)
-		-adding a way to get there and back
-	-make the hallways more structured
-
-		-make it resemble infinite cubicle halls
-	-add reward orbs
-
-		-yellow orbs DONE
-			-can be used like sd cards to gain random recipes
-		-blue orb
-			-gives an random effect from a list of useful effects, like
-				-default- get a weapon or piece of armor
-				-wounded- get bandages and antiseptic
-		-purple orb 
-			-give useful permament body mutations/traits
-			-skin hardness
-			-carry weight increase
-			-fire resistance/cold resistance 
-	-add magic items
-		-magic coffee maker 
-			-makes coffee that boosts your DEX and speed
-	-use yellow orbs as batteries
-		-make special universal batteries craftable from yellow orbs
-		-can only power converted equipment
 	-some notes from me or others
 		-have two paths players can slide down. scavenge outside in the wreckage of society or stick with the anomaly within for the gains despite 			the immediate danger
