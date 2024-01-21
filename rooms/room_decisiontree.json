@@ -81,8 +81,8 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "mx_decision_tree_forest_corner_NE",
-	"predecessor_mapgen": "backfloorchamber_north",
     "object": {
+      
       "mapgensize": [ 24, 24 ],
       "rows": [
         " oooooo  oooooooo   oooo",
@@ -122,8 +122,8 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "mx_decision_tree_forest_corner_NW",
-	"predecessor_mapgen": "backfloorchamber_north",
     "object": {
+      
       "mapgensize": [ 24, 24 ],
       "rows": [
         " oooooo  oooooooo   oo--",
@@ -163,8 +163,8 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "mx_decision_tree_forest_corner_SW",
-	"predecessor_mapgen": "backfloorchamber_north",
     "object": {
+      
       "mapgensize": [ 24, 24 ],
       "rows": [
         "------------------------",
@@ -204,8 +204,8 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "mx_decision_tree_forest_corner_SE",
-	"predecessor_mapgen": "backfloorchamber_north",
     "object": {
+      
       "mapgensize": [ 24, 24 ],
       "rows": [
         "--------------------oooo",
@@ -245,8 +245,8 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "mx_decision_tree_forest_edge",
-	"predecessor_mapgen": "backfloorchamber_north",
     "object": {
+      
       "mapgensize": [ 24, 24 ],
       "rows": [
         " oooooo  oooooooo   oooo",

@@ -79,7 +79,7 @@
     "id": "office_spawn_enemies",
     "recurrence": "30 seconds" ,
     "global": true,
-    "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{ "compare_int": [ { "u_val": "monsters_nearby", "radius": 60 }, "<", { "const": 20 } ] },{"not":{"u_near_om_location":"mutable_ink_sea"}}]},
+    "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{"math": ["u_monsters_nearby('radius':60)","<","20"]},{"not":{"u_near_om_location":"mutable_ink_sea"}}]},
     "effect": [ 
 		{ "mapgen_update": "office_spawner", "offset_x": 2 },
 		{ "mapgen_update": "office_spawner",  "offset_x": -2 },

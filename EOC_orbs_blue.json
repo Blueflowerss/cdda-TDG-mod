@@ -16,7 +16,7 @@
 	{"u_message": "You no longer feel any previous pain and you feel your wounds closing up."},
 	{ "u_lose_effect":"bleed" },
 	{ "u_lose_effect":"bite" },
-	{ "arithmetic": [ { "u_val": "pain" }, "=", { "const": 0 } ] }
+	{ "math": ["u_pain() ","=", "0"]}
 ]},
 	
 
@@ -25,7 +25,7 @@
     "effect": [
 	{"u_message": "Any exhaustion you had is gone."},
 	{ "u_lose_effect": "sleep_deprivation" },
-	{ "arithmetic": [ { "u_val": "sleep_deprivation" }, "=", { "const": 0 } ] },
-	{ "arithmetic": [ { "u_val": "fatigue" }, "=", { "const": 0 } ] },
-	{ "arithmetic": [ { "u_val": "stamina" }, "=", { "const": 99999 } ] }
+	{ "math": ["u_val('sleep_deprivation')","=","0"]},
+	{ "math": ["u_val('fatigue')","=","0"]},
+	{ "math": ["u_val('stamina')","=", "99999"]}
 ]}]

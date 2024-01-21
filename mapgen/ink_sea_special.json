@@ -3,7 +3,7 @@
     "type": "overmap_special",
     "id": "mutable_ink_sea",
     "city_distance": [ 0, -1 ],
-    "city_size": [ 0, -1 ],
+    "city_sizes": [ 0, -1 ],
     "subtype": "mutable",
     "locations": [ "backfloorchamber", "subterranean_empty" ],
     "occurrences": [ 3,5 ],

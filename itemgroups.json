@@ -17,8 +17,7 @@
     "subtype": "collection",
     "id": "vending_mutagens",
     "entries": [
-      { "item": "syringe", "count-min": 1, "count-max": 10 },
-      { "group": "mutagens", "prob": 100, "count-min": 2, "count-max": 6 }
+      { "item": "syringe", "count-min": 1, "count-max": 10 }
     ]
   },
   {
@@ -109,7 +108,6 @@
       { "group": "guns_shotgun_improvised", "prob": 20 },
       { "group": "museum_melee", "prob": 2 },
       { "group": "museum_guns", "prob": 20 },
-      { "group": "mutagens", "prob": 2 },
       { "group": "science", "prob": 20 },
       { "group": "surgery", "prob": 40 },
       { "group": "ammo_parts", "prob": 50 },
@@ -265,7 +263,6 @@
       { "group": "guns_shotgun_milspec", "prob": 100 },
       { "group": "bionics_mil", "prob": 25 },
       { "group": "bionics", "prob": 50 },
-      { "group": "mut_iv", "prob": 25 },
       { "group": "guns_energy", "prob": 15 },
       { "group": "military", "prob": 75 },
       { "group": "guns_launcher_milspec", "prob": 25 },
@@ -289,11 +286,8 @@
       { "group": "guns_shotgun_milspec", "prob": 25 },
       { "group": "bionics_mil", "prob": 15 },
       { "group": "bionics", "prob": 50 },
-      { "group": "mut_iv", "prob": 10 },
-      { "group": "mutagens", "prob": 25 },
       { "group": "guns_energy", "prob": 5 },
       { "group": "military", "prob": 50 },
-      { "group": "mil_hw", "prob": 25 },
       { "group": "science", "prob": 100 },
       { "group": "guns_launcher_milspec", "prob": 5 },
       { "group": "vault", "prob": 50 }
