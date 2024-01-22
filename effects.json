@@ -59,7 +59,7 @@
     "enchantments":[
 		{
 			"condition":"ALWAYS",
-			"values":[ {"value":"FOOTSTEP_NOISE","multiply":0},{"value":"SHOUT_NOISE","multiply":0}]
+			"values":[ {"value":"FOOTSTEP_NOISE","multiply":0.01},{"value":"SHOUT_NOISE","multiply":0.01}]
 		}
 	]
   },

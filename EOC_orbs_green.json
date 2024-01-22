@@ -8,7 +8,9 @@
 		  [ "EOC_green_orb_struct_integrity", {"const":45 }],
 		  [ "EOC_green_orb_focus", {"const":45}],
 			["EOC_green_orb_move", {"const":45}],
-			["EOC_green_orb_regen", {"const":45}]
+			["EOC_green_orb_regen", {"const":45}],
+			["EOC_green_orb_noise",{"const":45}]
+
 		  ]
 	  }
   },

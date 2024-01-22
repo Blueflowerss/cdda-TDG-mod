@@ -34,7 +34,7 @@
     "str": "small yellow orb"
   },
 	 "symbol": "o",
-	"description": "A small neon-glowing yellow orb, for an inexplicable reason you feel like inserting it into a nearby SD-card reader..",
+	"description": "A small neon-glowing yellow orb.",
 	"price": 1000,
 	"price_postapoc": 100,
 	"material": [
@@ -42,11 +42,6 @@
 	 ],
 	  "weight": "50 g",
 	  "volume": "10 ml",
-  "use_action":{
-	"type":"effect_on_conditions",
-	"description":"Small yellow orb cracking",
-	"effect_on_conditions":["EOC_yellow_orb_small"]
-  },
 	"flags":[
 		"LIGHT_5",
 		"SINGLE_USE"]
