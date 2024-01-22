@@ -21,11 +21,12 @@
 		"anger_triggers": [
 			"HURT"
 		],
-	    "armor_bash": 8,
-	    "armor_cut": 16,
-	    "armor_bullet": 4,
+		"armor":{
+	    "bash": 8,
+	    "cut": 16,
+	    "bullet": 4,
+		"electric": 50},
 		"harvest":"ink_sea_criniode",
-	    "armor_elec": 50,
 		"vision_night": 7,
 		"vision_day": 14,
 		"death_drops": {

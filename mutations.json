@@ -7,7 +7,8 @@
     "description": "Your brain seems energized here.",
     "types": [ "SLEEP" ],
     "category": [ "HUMAN" ],
-    "fatigue_modifier": -0.45
+    "fatigue_modifier": -0.45,
+    "fatigue_regen_modifier": 1.5
   },
   {
     "type": "mutation",
@@ -16,9 +17,8 @@
     "points": 3,
     "description": "Your body is healing.",
     "category": [ "HUMAN" ],
-	"healing_awake": 0.8,
-	"healing_multiplier": 2.5,
-	"mending_modifier": 16
+	"healing_multiplier": 4.5,
+	"mending_modifier": 10
   },
   {
     "type": "mutation",

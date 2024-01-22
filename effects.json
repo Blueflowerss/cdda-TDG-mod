@@ -59,7 +59,7 @@
     "enchantments":[
 		{
 			"condition":"ALWAYS",
-			"values":[ {"value":"FOOTSTEP_NOISE","multiply":0},{"value":"SHOUT_NOISE","multiply":0}]
+			"values":[ {"value":"FOOTSTEP_NOISE","multiply":0.01},{"value":"SHOUT_NOISE","multiply":0.01}]
 		}
 	]
   },
@@ -102,13 +102,13 @@
 	"apply_message": "Your brain goes on overdrive.",
     "int_dur_factor": 1000,
     "max_duration": "40 m",
-	"base_mods":[{"dex_mod":6}],
     "enchantments":[
 		{
 			"condition":"ALWAYS",
 			"values":[{"value":"SPEED","add":50},
-					{"value":"BONUS_DODGE","add":10},
-					{"value":"BONUS_DAMAGE","add":15}
+					{"value":"BONUS_DODGE","add":5},
+          {"value":"EVASION","add":0.5},
+					{"value":"MELEE_DAMAGE","add":8}
 					]
 		}
 	]
