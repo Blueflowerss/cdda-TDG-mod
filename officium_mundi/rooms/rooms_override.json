@@ -1,0 +1,40 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_office_strange",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "---Q---Q--  ----Q--Q---Q",
+        "-                       ",
+        "Q  -   -   -   -   -   -",
+        "- --- --- --- --- --- --",
+        "-  -   -   -   -   -   -",
+        "-                       ",
+        "Q  -   -   -   -   -   -",
+        "- --- --- --- --- --- --",
+        "-  -   -   -   -   -   -",
+        "-                       ",
+        "   -   -   -   -   -   -",
+        "  --- --- --- --- --- --",
+        "-  -   -   -   -   -   -",
+        "-                       ",
+        "Q  -   -   -   -   -   -",
+        "- --- --- --- --- --- --",
+        "Q  -   -   -   -   -   -",
+        "-                       ",
+        "-  -   -   -   -   -   -",
+        "Q --- --- --- --- --- --",
+        "-  -   -   -   -   -   -",
+        "-                       ",
+        "Q  -   -   -   -   -   -",
+        "- --- --- --- --- --- --"
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "backrooms_palette" ],
+	  "terrain": { "o": [["t_carpet_backrooms",25],["t_decision_wall",75 ]],
+					"X":["t_decision_tree"]}
+    }
+  }
+]
