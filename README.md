@@ -1,3 +1,17 @@
+>Where is the magic now?
+>
+>The cubicles stretch on, now with hints of decay. Beige walls chipped, covered in mold.
+>
+>The lights flicker, the constant flow of ideosphographic energy now gone, the lights will soon go out.
+>
+>No one's maintaining this space anymore. When I look at the horizon; awe doesn't fill me, it doesn't curve anymore.
+>
+>This space, once so dangerous and yet so wonderful, is now a husk, a reminder of the reality outside these non-euclidean walls, crushing in on those who are left and leaving.
+>
+>I weep for the Offices, for all the little realities surrounding us.
+
+-Written by me, Blue
+
 # cdda-TDG-mod
 
 Attempt at integrating "The Daily Grind" novel with Cataclysm: Dark Days Ahead.
