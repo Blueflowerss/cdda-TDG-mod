@@ -3,7 +3,7 @@
 	"type":"MONSTER",
 	"id":"mon_office_anaconda",
 	"name":"camraconda",
-	"description":"A gigantic snake covered in wire insulation with vicious fangs, you feel your body freezing up.",
+	"description":"A gigantic snake made out of insulated wire with vicious fangs, you feel your body freezing up.",
 	"hp":140,
 	"volume": "150 L",
 	"weight": "180 kg",
@@ -84,7 +84,7 @@
   "name": {
     "str": "strider"
   },
-  "description": "A strange creature that looks like a mix of a stapler and a spider. Its eight legs seem to be formed from misshapen pens sprouting from beneath its lower half, and its single eye located right at the front of the stapler's upper half scans the area for easy prey.",
+  "description": "A strange creature that looks like a mix between a stapler and spider. Its eight legs seem to be formed from misshapen pens sprouting from beneath its lower half, and its single eye located right at the front of the stapler's upper half scans the area for danger.",
   "default_faction": "office_stapler",
   "bodytype": "spider",
   "species": [
@@ -158,9 +158,13 @@
 	"GOODHEARING",
 	"HEARS",
     "CLIMBS",
-	"GROUP_MORALE",
-    "PATH_AVOID_DANGER_1"
+	"GROUP_MORALE"
   ],
+  "path_settings":{
+    "avoid_traps":true,
+    "allow_climb_stairs":true,
+    "avoid_sharp":true
+  },
   "copy-from": "mon_spider_jumping_giant"
 },
 {
@@ -231,9 +235,12 @@
 	"GRABS",
 	"NIGHT_INVISIBILITY",
     "NO_BREATHE",
-    "PATH_AVOID_DANGER_1",
     "STUN_IMMUNE"
-  ]
+  ],
+  "path_settings":{
+    "avoid_traps":true,
+    "avoid_sharp":true
+  }
 },
 {
   "id": "mon_office_tumblefeed",
@@ -333,6 +340,7 @@
     "subtype":"distribution",
 	"items":["office_green_orb"]
   }
+
 },
 {
   "id": "mon_office_human",
@@ -341,7 +349,7 @@
     "str": "paper pusher"
   },
   "copy-from":"mon_dementia",
-  "description": "Seemingly a regular office worker.. without any facial features.  Seems eager to strangle the life from you.",
+  "description": "Seemingly a regular office worker.. without any facial features.  Seems eager to strangle the life out of you.",
   "default_faction": "office_monsters",
   "bodytype": "human",
   "species": [
@@ -352,9 +360,6 @@
   "weight": "81500 g",
   "hp": 380,
   "speed": 110,
-  "path_settings": {
-    "max_dist": 15
-  },
   "material": [
     "paper"
   ],
@@ -431,11 +436,16 @@
 	"FLAMMABLE",
 	"GRABS",
 	"HUMAN",
-	"PATH_AVOID_DANGER_2",
 	"ATTACKMON",
     "PUSH_MON",
     "PUSH_VEH",
     "RANGED_ATTACKER"
-  ]
-}
+  ],
+  "path_settings":{
+    "max_dist": 15,
+    "bash_strength":50,
+    "avoid_traps":true,
+    "allow_climb_stairs":true
+  }
+  }
 ]
