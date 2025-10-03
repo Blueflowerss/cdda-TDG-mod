@@ -1,7 +1,6 @@
 [
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_sea",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -38,7 +37,6 @@
 
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_plastic_beach",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -75,7 +73,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_river",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -112,7 +109,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_sea_corner_W",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -148,7 +144,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_sea_corner_S",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -184,7 +179,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_sea_corner_E",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -220,7 +214,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_sea_corner_N",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -256,7 +249,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_river_W",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -292,7 +284,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_river_S",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -328,7 +319,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_river_E",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -364,7 +354,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "mx_ink_river_N",
     "object": {
       "mapgensize": [ 24, 24 ],

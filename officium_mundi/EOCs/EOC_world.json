@@ -1,8 +1,0 @@
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_TDG_create_worlds",
-    "//": "Prepares all Dungeon worlds.",
-    "eoc_type": "EVENT",
-    "required_event": "game_avatar_new",
-    "effect": [ { "create_world": { "world_prefix": "offices", "region_type": "offices" } } ]
-  }

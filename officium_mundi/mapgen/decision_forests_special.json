@@ -49,7 +49,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "mutable_decision_forest" ],
     "weight": 500,
     "object": {
@@ -88,7 +87,6 @@
   },
 {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "mutable_decision_forest_edge" ],
     "weight": 500,
     "object": {

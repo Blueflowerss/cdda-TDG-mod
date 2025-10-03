@@ -5,7 +5,7 @@
   "looks_like": "t_wall",
   "name": "yellow wall",
   "description": "A wall, painted yellow.",
-  "symbol": "LINE_OXOX",
+  "symbol": "#",
   "color": "yellow",
   "move_cost": 0,
   "coverage": 100,
@@ -36,7 +36,7 @@
   "looks_like": "t_wall",
   "name": "gray wall",
   "description": "A wall, painted gray.",
-  "symbol": "LINE_OXOX",
+  "symbol": "#",
   "color": "light_gray",
   "move_cost": 0,
   "coverage": 100,
@@ -160,7 +160,7 @@
     "required_str": -1,
     "flags": [ "TRANSPARENT", "MOUNTABLE", "CONTAINER", "PLACE_ITEM", "LIQUIDCONT", "NOITEM", "SEALED" ],
     "examine_action": "keg",
-    "keg_capacity": 75,
+    "keg_capacity": "75 L",
     "deconstruct": {
       "items": [
         { "item": "plastic_chunk", "count": [ 4, 10 ] },

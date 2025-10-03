@@ -23,7 +23,7 @@
     "effect": [
 	{"u_location_variable": { "global_val": "OM_enterspot" }},
       { "u_teleport": { "global_val": "OM_returnspot" }, "force": true },
-	  { "u_add_var": "offices_visited", "type": "bool", "context": "office","value":"true" },
+	  { "u_add_var": "office_visited", "value": "yes" },
 	  {"u_message": "You step through the door."}
     ],
 	"false_effect": [
@@ -44,7 +44,7 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_enterspot",
     "//": "Picks a office chamber.",
-	"condition":{"not":{"u_has_var":"offices_visited","type":"bool","context":"office","value":"true"}},
+	"condition":{ "not":{ "compare_string": [ "yes", { "u_val": "office_visited" } ] } },
     "effect": [
 	  {	
         "u_location_variable": { "global_val": "OM_enterspot" },
@@ -62,7 +62,7 @@
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
-	"condition":{"u_has_var":"offices_visited","type":"bool","context":"office","value":"true"},
+	"condition": { "compare_string": [ "yes", { "u_val": "office_visited" } ] },
     "false_effect": [
 	{"u_location_variable": { "global_val": "OM_returnspot" }},
 	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
@@ -74,32 +74,6 @@
 	{"u_message": "You step through the door."}
     ]
   },
-  {
-    "type": "effect_on_condition",
-    "id": "office_spawn_enemies",
-    "recurrence": "30 seconds" ,
-    "global": true,
-    "condition": {"and":[{"u_at_om_location": "backfloorchamber"},{"math": ["u_monsters_nearby('radius':60)","<","20"]},{"not":{"u_near_om_location":"mutable_ink_sea"}}]},
-    "effect": [ 
-		{ "mapgen_update": "office_spawner", "offset_x": 2 },
-		{ "mapgen_update": "office_spawner",  "offset_x": -2 },
-		{ "mapgen_update": "office_spawner", "offset_y": 2 },
-		{ "mapgen_update": "office_spawner", "offset_y": -2 }
-	   ]
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "update_mapgen_id": "office_spawner",
-    "//": "spawns a buncha monsters",
-    "object": {
-      "place_monsters": [
-	  {"monster":"GROUP_OFFICES_RESPAWN",
-	  "x":[0,23],"y":[0,23],"density": 0.01 }
-        
-	]
-    }
-  },
   
 {
     "type": "effect_on_condition",
@@ -108,7 +82,7 @@
       "u_query": "You open the door, the room beyond feels strange, step through?",
       "default": false
     },
-    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter","office_spawn_enemies" ] } ]
+    "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter" ] } ]
   },
   {
 	"type": "effect_on_condition",

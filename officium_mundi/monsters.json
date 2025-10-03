@@ -443,9 +443,9 @@
   ],
   "path_settings":{
     "max_dist": 15,
-    "bash_strength":50,
     "avoid_traps":true,
-    "allow_climb_stairs":true
+    "allow_climb_stairs":true,
+    "avoid_dangerous_fields":true
   }
   }
 ]

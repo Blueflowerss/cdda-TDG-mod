@@ -1,7 +1,7 @@
 [
 	
 	{
-    "type": "GENERIC",
+    "type": "ITEM",
   "id": "office_yellow_orb",
   "looks_like": "baseball",
   "symbol": "o",
@@ -15,8 +15,8 @@
 	"effect_on_conditions":["EOC_yellow_orb"]
   },
   "description": "A small neon-glowing yellow orb, you wonder what is it's purpose.",
-  "price": 10000,
-  "price_postapoc": 1000,
+  "price": "10000 USD",
+  "price_postapoc": "1 USD",
   "material": [
     "glass"
   ],
@@ -27,7 +27,7 @@
   "weight": "500 g",
   "volume": "150 ml"
 },
-	{ "type": "GENERIC",
+	{ "type": "ITEM",
   "id": "office_yellow_orb_small",
 	"looks_like":"baseball",
   "name": {
@@ -35,8 +35,8 @@
   },
 	 "symbol": "o",
 	"description": "A small neon-glowing yellow orb.",
-	"price": 1000,
-	"price_postapoc": 100,
+    "price": "1000 USD",
+    "price_postapoc": "10 cent",
 	"material": [
 		"glass"
 	 ],
@@ -47,7 +47,7 @@
 		"SINGLE_USE"]
 	},
 {
-    "type": "GENERIC",
+    "type": "ITEM",
   "id": "office_blue_orb",
   "looks_like": "baseball",
   "symbol": "o",
@@ -56,8 +56,8 @@
     "str": "blue orb"
   },
   "description": "A sky blue orb, you wonder what is it's purpose.",
-  "price": 10000,
-  "price_postapoc": 1000,
+  "price": "10000 USD",
+  "price_postapoc": "1 USD",
   "material": [
     "glass"
   ],
@@ -74,7 +74,7 @@
   "volume": "150 ml"
 },
 {
-    "type": "GENERIC",
+    "type": "ITEM",
   "id": "office_green_orb",
   "looks_like": "baseball",
   "symbol": "o",
@@ -83,8 +83,8 @@
     "str": "green orb"
   },
   "description": "A neon green orb, you wonder what is it's purpose.",
-  "price": 10000,
-  "price_postapoc": 1000,
+  "price": "100000 USD",
+  "price_postapoc": "10 USD",
   "material": [
     "glass"
   ],
@@ -101,7 +101,7 @@
   }
 },
 {
-    "type": "GENERIC",
+    "type": "ITEM",
   "id": "office_purple_orb",
   "looks_like": "baseball",
   "symbol": "o",
@@ -110,8 +110,8 @@
     "str": "purple orb"
   },
   "description": "A neon purple orb, you wonder what is it's purpose.",
-  "price": 100000,
-  "price_postapoc": 10000,
+  "price": "1000000 USD",
+  "price_postapoc": "30 USD",
   "material": [
     "glass"
   ],

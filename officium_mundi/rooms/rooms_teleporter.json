@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_strange_door",
     "object": {
       "rows": [
@@ -31,12 +30,11 @@
         "                        "
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
-      "terrain": { "X": [ "t_portal_to_office" ]}
+      "terrain": { "X": [ "t_portal_to_office" ] }
     }
   },
   {
     "type": "mapgen",
-    "method": "json",
     "update_mapgen_id": "mx_return_door",
     "object": {
       "rows": [
@@ -66,7 +64,7 @@
         "                        "
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
-      "terrain": { "X": [ "t_portal_to_overworld" ]}
+      "terrain": { "X": [ "t_portal_to_overworld" ] }
     }
   }
 ]

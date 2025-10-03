@@ -1,4 +1,5 @@
-[{
+[
+{
     "type": "MONSTER_FACTION",
     "name": "office_monsters",
 	"by_mood":["office_stapler"],
@@ -78,4 +79,4 @@
 	"base_faction":"office_monsters",
     "name": "office_trap",
 	"friendly":["office_stapler"]
-  }]]
+  }]
