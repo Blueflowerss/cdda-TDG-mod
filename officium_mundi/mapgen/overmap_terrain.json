@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "overmap_location",
     "id": "backfloorchamber",
     "terrains": [ "backfloorchamber" ]
@@ -11,7 +11,7 @@
     "sym": ".",
     "color": "white",
     "see_cost": "low",
-    "spawns": { "group": "GROUP_OFFICES", "population":[1,1], "chance": 80 }
+    "spawns": { "group": "GROUP_OFFICES", "population": [ 1, 1 ], "chance": 80 }
   },
   {
     "type": "mapgen",
@@ -56,8 +56,8 @@
             [ "mx_backroom_big_breakroom", 25 ],
             [ "mx_backroom_big_bathroom", 20 ]
           ],
-          "x": [8, 13 ],
-          "y": [8, 13 ],
+          "x": [ 8, 13 ],
+          "y": [ 8, 13 ],
           "repeat": [ 0, 1 ]
         },
         {
@@ -70,25 +70,17 @@
             [ "mx_backroom_small_breakroom", 25 ],
             [ "mx_backroom_small_bathroom", 20 ]
           ],
-          "x": [4, 18 ],
-          "y": [4, 18 ],
-          "repeat": [ 0,1 ]
+          "x": [ 4, 18 ],
+          "y": [ 4, 18 ],
+          "repeat": [ 0, 1 ]
         },
-		{
-			"chunks": [
-				["null",100],
-				["mx_office_strange",10],
-				["mx_decision_tree",1]
-				],
-			"x":0,
-			"y":0
-		}
+        { "chunks": [ [ "null", 100 ], [ "mx_office_strange", 10 ], [ "mx_decision_tree", 1 ] ], "x": 0, "y": 0 }
       ]
     }
   },
   {
     "type": "overmap_terrain",
-    "id": [ "mutable_decision_forest","mutable_decision_forest_edge" ],
+    "id": [ "mutable_decision_forest", "mutable_decision_forest_edge" ],
     "name": "decision forest",
     "sym": "4",
     "color": "c_cyan",
@@ -104,7 +96,7 @@
     "color": "c_magenta",
     "mondensity": 1,
     "see_cost": "none",
-    "spawns": { "group": "GROUP_INK_SEA", "population":[1,5], "chance": 60 }
+    "spawns": { "group": "GROUP_INK_SEA", "population": [ 1, 5 ], "chance": 60 }
   },
   {
     "type": "overmap_terrain",

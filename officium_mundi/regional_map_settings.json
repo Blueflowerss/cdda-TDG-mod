@@ -10,10 +10,10 @@
     "forest_composition": "default",
     "forest_trails": "no_forest_trails",
     "highways": "default",
-    "cities": "default",
+    "cities": "no_city",
     "map_extras": "no_map_extras",
-    "terrain_furniture": "default",
-    "weather": "extreme_weather",
+    "terrain_furniture": "office",
+    "weather": "office_weather",
     "default_oter": [
       "deep_rock",
       "deep_rock",
@@ -38,6 +38,17 @@
       "deep_rock"
     ],
     "default_groundcover": [ [ "t_region_groundcover", 1 ] ],
+    "feature_flag_settings": {
+      "blacklist": [  ],
+      "whitelist": [
+        "backfloorchamber",
+        "mutable_decision_forest",
+        "mutable_decision_forest_edge",
+        "mutable_ink_sea",
+        "mutable_plastic_beach",
+        "mutable_ink_river"
+      ]
+    },
     "connections": {
       "intra_city_road_connection": "local_road",
       "inter_city_road_connection": "local_road",
@@ -56,5 +67,21 @@
     "base_wind": 1.0,
     "base_wind_distrib_peaks": 3,
     "base_wind_season_variation": 0
+  },
+  {
+    "type": "region_settings_terrain_furniture",
+    "id": "office",
+    "ter_furn": [  ]
+  },
+  {
+    "type": "region_settings_city",
+    "id": "no_city",
+    "shop_radius": 30,
+    "shop_sigma": 50,
+    "park_radius": 20,
+    "park_sigma": 80,
+    "houses": [  ],
+    "parks": [  ],
+    "shops": [  ]
   }
 ]
