@@ -1,0 +1,26 @@
+[
+{
+	"type": "ITEM",
+	"id":"office_coffeemaker",
+	"copy-from":"coffeemaker",
+	"name":"xeno coffeemaker",
+	"description":"This is a heating element with pot and frame for holding coffee or other powders.  It's got a battery compartment for use when the power goes out. This one's special, you can use it to make a super coffee. "
+},
+{
+	"type": "ITEM",
+	"subtypes": [
+		"COMESTIBLE"
+	],
+	"id":"office_coffee",
+	"copy-from":"coffee",
+	"name":"office coffee",
+	"price": "100 USD",
+	"price_postapoc": "3 USD",
+	"description":"An anomalously potent coffee, just from the smell alone you feel energized.",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a swig, the world slows down.",
+      "effects": [ { "id": "eff_xeno_coffee", "duration": "45 m" } ]
+    }
+}
+]

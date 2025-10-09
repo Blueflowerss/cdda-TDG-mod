@@ -1,0 +1,9 @@
+[
+{
+	  "type": "effect_on_condition",
+	  "id": "EOC_yellow_orb",
+	  "effect":[
+		  {"u_message": "You crack the orb in your hand, it crumbles into glowing dust around you and then vanishes. You're pretty sure it didn't do anything."}
+	  ]
+}
+  ]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_sharp_concrete_route",
+    "name": "sharp concrete",
+    "description": "A mass of jutting out, odd angled and really sharp concrete plates. Walking on these is a bad idea.",
+    "looks_like": "f_wreckage",
+    "copy-from":"t_railroad_rubble",
+    "extend":{ "flags": [ "SHARP" ] }
+  }
+]
