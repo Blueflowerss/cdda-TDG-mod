@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "overmap_location",
     "id": "Office_tower",
     "terrains": [ "backfloorchamber" ]

@@ -1,10 +1,11 @@
 [
-{
+  {
     "type": "overmap_special",
     "id": "mutable_decision_forest",
     "city_distance": [ 0, -1 ],
     "city_sizes": [ 0, -1 ],
     "subtype": "mutable",
+    "flags": [ "OFFICE" ],
     "locations": [ "backfloorchamber", "subterranean_empty" ],
     "occurrences": [ 10, 20 ],
     "check_for_locations": [
@@ -21,12 +22,12 @@
       "forest_root_surface": { "overmap": "field", "below": "surface_to_-1" },
       "forest_root_-1": { "overmap": "solid_earth", "above": "surface_to_-1" },
       "forest_core": { "overmap": "mutable_decision_forest_north", "north": "forest", "east": "forest", "south": "forest", "west": "forest" },
-	  "forest_edge": {
+      "forest_edge": {
         "overmap": "mutable_decision_forest_edge_north",
-        "north": { "id": "forest","type":"available"},
-        "east": { "id": "forest","type":"available"},
-        "south": { "id": "forest","type":"available"},
-        "west": { "id": "forest","type":"available"}	
+        "north": { "id": "forest", "type": "available" },
+        "east": { "id": "forest", "type": "available" },
+        "south": { "id": "forest", "type": "available" },
+        "west": { "id": "forest", "type": "available" }
       }
     },
     "root": "forest_root_surface",
@@ -34,20 +35,15 @@
       [
         {
           "name": "-1_to_-9",
-          "chunk": [
-            { "overmap": "forest_root_-1", "pos": [ 0, 0, 0 ] },
-            { "overmap": "forest_core", "pos": [ 0, 0, -8 ] }
-          ],
+          "chunk": [ { "overmap": "forest_root_-1", "pos": [ 0, 0, 0 ] }, { "overmap": "forest_core", "pos": [ 0, 0, -8 ] } ],
           "max": 1
         }
       ],
       [ { "overmap": "forest_core", "max": 10 } ],
-	  [ {"overmap": "forest_edge", "weight":1}]
-	  
-
+      [ { "overmap": "forest_edge", "weight": 1 } ]
     ]
   },
-{
+  {
     "type": "mapgen",
     "om_terrain": [ "mutable_decision_forest" ],
     "weight": 500,
@@ -80,12 +76,10 @@
       ],
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
       "palettes": [ "backrooms_palette" ],
-      "place_nested": [
-        { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0}
-      ]
+      "place_nested": [ { "chunks": [ "mx_decision_tree_forest" ], "x": 0, "y": 0 } ]
     }
   },
-{
+  {
     "type": "mapgen",
     "om_terrain": [ "mutable_decision_forest_edge" ],
     "weight": 500,
@@ -120,17 +114,56 @@
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
       "palettes": [ "backrooms_palette" ],
       "place_nested": [
-	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0},
-	  { "chunks": [ "mx_decision_tree_forest_corner_NE" ], "x": 0, "y": 0, "joins": { "north": [ "forest" ],"east":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_corner_NW" ], "x": 0, "y": 0, "joins": { "north": [ "forest" ],"west":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_corner_SE" ], "x": 0, "y": 0, "joins": { "south": [ "forest" ],"east":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_corner_SW" ], "x": 0, "y": 0, "joins": { "south": [ "forest" ],"west":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"east":["forest"],"west":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "south": ["forest" ],"east":["forest"],"west":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"east":["forest"],"south":["forest"] } },
-	  { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0, "joins": { "north": ["forest" ],"west":["forest"],"south":["forest"] } }
-
-	  ]
+        { "chunks": [ "mx_decision_tree_forest_edge" ], "x": 0, "y": 0 },
+        {
+          "chunks": [ "mx_decision_tree_forest_corner_NE" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "north": [ "forest" ], "east": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_corner_NW" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "north": [ "forest" ], "west": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_corner_SE" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "south": [ "forest" ], "east": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_corner_SW" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "south": [ "forest" ], "west": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_edge" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "north": [ "forest" ], "east": [ "forest" ], "west": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_edge" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "south": [ "forest" ], "east": [ "forest" ], "west": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_edge" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "north": [ "forest" ], "east": [ "forest" ], "south": [ "forest" ] }
+        },
+        {
+          "chunks": [ "mx_decision_tree_forest_edge" ],
+          "x": 0,
+          "y": 0,
+          "joins": { "north": [ "forest" ], "west": [ "forest" ], "south": [ "forest" ] }
+        }
+      ]
     }
   }
 ]
