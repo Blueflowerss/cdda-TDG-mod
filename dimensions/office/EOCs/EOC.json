@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "effect_on_condition",
     "id": "EOC_OW_returnspot",
     "//": "Picks a random house.",
@@ -15,78 +15,77 @@
           "random": true
         }
       }
-    ]},
-{
+    ]
+  },
+  {
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportreturn",
     "//": "Teleports you to a random field in the overworld.",
     "effect": [
-	{"u_location_variable": { "global_val": "OM_enterspot" }},
+      { "u_location_variable": { "global_val": "OM_enterspot" } },
+      { "u_travel_to_dimension": "", "npc_travel_radius": 0 },
       { "u_teleport": { "global_val": "OM_returnspot" }, "force": true },
-	  { "u_add_var": "office_visited", "value": "yes" },
-	  {"u_message": "You step through the door."}
+      { "u_add_var": "office_visited", "value": "yes" },
+      { "u_message": "You step through the door." }
     ],
-	"false_effect": [
-	{"run_eocs":["EOC_OW_returnspot","EOC_OW_teleportreturn"]},
-	{"u_message": "You step through the door, looking back you find the door missing."}
-	]
+    "false_effect": [
+      { "run_eocs": [ "EOC_OW_returnspot", "EOC_OW_teleportreturn" ] },
+      { "u_message": "You step through the door, looking back you find the door missing." }
+    ]
   },
- {
+  {
     "type": "effect_on_condition",
     "id": "EOC_OW_warpdoor",
-    "condition": {
-      "u_query": "You open the door, behind it you see the outside world, step through?",
-      "default": false
-    },
-    "effect": [ { "run_eocs": ["EOC_OW_teleportreturn" ] } ]
+    "condition": { "u_query": "You open the door, behind it you see the outside world, step through?", "default": false },
+    "effect": [ { "run_eocs": [ "EOC_OW_teleportreturn" ] } ]
   },
- {
+  {
     "type": "effect_on_condition",
     "id": "EOC_OW_enterspot",
     "//": "Picks a office chamber.",
-	"condition":{ "not":{ "compare_string": [ "yes", { "u_val": "office_visited" } ] } },
+    "condition": { "not": { "compare_string": [ "yes", { "u_val": "office_visited" } ] } },
     "effect": [
-	  {	
+      { "u_travel_to_dimension": "the_office", "npc_travel_radius": 0, "region_type": "office" },
+      {
         "u_location_variable": { "global_val": "OM_enterspot" },
         "target_params": {
           "om_terrain": "backfloorchamber",
           "om_terrain_match_type": "CONTAINS",
           "search_range": 300,
           "min_distance": 200,
-          "z": -9,
+          "z": 0,
           "random": true
         }
       }
-    ]},
-{
+    ]
+  },
+  {
     "type": "effect_on_condition",
     "id": "EOC_OW_teleportenter",
     "//": "Teleports you to a random chamber in the offices.",
-	"condition": { "compare_string": [ "yes", { "u_val": "office_visited" } ] },
+    "condition": { "compare_string": [ "yes", { "u_val": "office_visited" } ] },
     "false_effect": [
-	{"u_location_variable": { "global_val": "OM_returnspot" }},
-	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
-	{"u_message": "You step through the door, looking back you find the door missing."}
+      { "u_travel_to_dimension": "the_office", "npc_travel_radius": 0, "region_type": "office" },
+      { "u_location_variable": { "global_val": "OM_returnspot" } },
+      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
+      { "u_message": "You step through the door, looking back you find the door missing." }
     ],
-	"effect":[
-	{"u_location_variable": { "global_val": "OM_returnspot" }},
-	{ "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
-	{"u_message": "You step through the door."}
+    "effect": [
+      { "u_travel_to_dimension": "the_office", "npc_travel_radius": 0, "region_type": "office" },
+      { "u_location_variable": { "global_val": "OM_returnspot" } },
+      { "u_teleport": { "global_val": "OM_enterspot" }, "force": true },
+      { "u_message": "You step through the door." }
     ]
   },
-  
-{
+  {
     "type": "effect_on_condition",
     "id": "EOC_OFFICE_warpdoor",
-    "condition": {
-      "u_query": "You open the door, the room beyond feels strange, step through?",
-      "default": false
-    },
+    "condition": { "u_query": "You open the door, the room beyond feels strange, step through?", "default": false },
     "effect": [ { "run_eocs": [ "EOC_OW_enterspot", "EOC_OW_teleportenter" ] } ]
   },
   {
-	"type": "effect_on_condition",
+    "type": "effect_on_condition",
     "id": "EOC_xeno_coffee",
-    "effect": [ { "u_add_effect":"eff_xeno_coffee","duration":"40 m","intensity":5 } ]
-  }	  
+    "effect": [ { "u_add_effect": "eff_xeno_coffee", "duration": "40 m", "intensity": 5 } ]
+  }
 ]
