@@ -91,17 +91,27 @@
   {
     "type": "ITEM",
     "id": "office_computer",
-	"symbol": ",",
-	"color": "light_gray",
+    "symbol": ",",
+    "color": "light_gray",
     "name": { "str": "desktop computer" },
-	"price": "300 USD",
-	"price_postapoc": "3 USD",
-	"material": [
-		"steel",
-		"plastic"
-	],
-	"weight": "9 kg",
-	"volume": "12 L",
+    "price": "300 USD",
+    "price_postapoc": "3 USD",
+    "material": [ "steel", "plastic" ],
+    "weight": "9 kg",
+    "volume": "12 L",
     "description": "An unpowered bleige computer. Good for electronics."
+  },
+  {
+    "type": "ITEM",
+    "id": "office_blue_pen_ink",
+    "copy-from": "water_sewage",
+    "name": { "str_sp": "blue pen ink" },
+    "symbol": "~",
+    "description": "Prussian blue, crystal violet, and phthalocyanine blue pigments infused with polymers, stabilizers, and water to help the ink flow properly.",
+    "volume": "1 ml",
+    "weight": "1 mg",
+    "color": "blue",
+    "looks_like": "permanent_ink",
+    "flags": [ "TRADER_AVOID" ]
   }
 ]
